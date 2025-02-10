@@ -27,26 +27,87 @@
     </style>
 </head>
 <body class="antialiased bg-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-lg z-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#" class="text-xl font-bold text-orange-500">UPF Detector</a>
+                <div class="hidden sm:flex space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-gray-900">Features</a>
+                    <a href="#faq" class="text-gray-600 hover:text-gray-900">FAQ</a>
+                    <a href="#contact" class="text-gray-600 hover:text-gray-900">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
     <div class="gradient-bg min-h-[80vh] flex items-center">
         <div class="max-w-6xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
-            <div class="text-center sm:text-left">
-                <span class="inline-block text-orange-500 font-medium tracking-wide text-sm mb-8">
-                    UPF DETECTOR APP
-                </span>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Column: Text Content -->
+                <div class="text-center lg:text-left">
+                    <span class="inline-block text-orange-500 font-medium tracking-wide text-sm mb-8">
+                        UPF DETECTOR APP
+                    </span>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                        Make healthier choices in seconds
+                    </h1>
+                    
+                    <p class="text-xl text-gray-600 mb-10 max-w-2xl lg:max-w-none">
+                        Instantly identify ultra-processed foods while shopping with the world's simplest food scanner app. Free forever, no ads.
+                    </p>
+                    
+                    <a href="https://apps.apple.com/app/upfdetector" 
+                    class="download-btn inline-flex items-center px-8 py-4 rounded-xl text-white font-semibold shadow-lg">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.0754 12.3188C17.0954 10.7312 17.9177 9.35625 19.2627 8.41875C18.4427 7.275 17.2127 6.58125 15.6127 6.32625C14.1002 6.07875 12.4452 7.03125 11.6602 7.03125C10.8377 7.03125 9.38772 6.35625 8.16772 6.35625C6.01772 6.38625 3.71772 8.0625 3.71772 11.4688C3.71772 12.5812 3.91772 13.7313 4.31772 14.9188C4.85272 16.4813 6.71272 19.9688 8.66272 19.9062C9.81772 19.875 10.6427 19.0875 12.1177 19.0875C13.5427 19.0875 14.3127 19.9062 15.5927 19.9062C17.5652 19.875 19.2402 16.7063 19.7502 15.1375C17.1902 13.9125 17.0754 12.3938 17.0754 12.3188ZM14.7377 4.725C15.8402 3.4125 15.7377 2.2125 15.7127 1.875C14.7252 1.9375 13.5927 2.53125 12.9377 3.2625C12.2127 4.05 11.7502 5.0625 11.8502 6.30625C12.9227 6.39375 13.9127 5.7375 14.7377 4.725Z"/>
+                        </svg>
+                        Download on App Store
+                    </a>
+                </div>
                 
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                    Unique Food Scanner & Health Guide
-                </h1>
-                
-                <p class="text-xl text-gray-600 mb-10 max-w-2xl">
-                    Scan barcode to instantly check if your food is ultra-processed using the NOVA classification.
-                </p>
-                
-                <a href="https://apps.apple.com/app/upfdetector" 
-                   class="download-btn inline-flex items-center px-8 py-4 rounded-xl text-white font-semibold shadow-lg">
-                    DOWNLOAD APP
-                </a>
+                <!-- Right Column: App Screenshot -->
+                <div class="flex justify-center lg:justify-end">
+                    <img src="https://placehold.co/300x600/EEF2FF/4F46E5.png" 
+                        alt="UPF Detector App Screenshot" 
+                        class="h-[600px] rounded-3xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div id="features" class="max-w-6xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Key Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-6 bg-white rounded-2xl shadow-lg">
+                <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Quick Barcode Scanning</h3>
+                <p class="text-gray-600">Instantly scan any food product's barcode to check if it's ultra-processed.</p>
+            </div>
+            <div class="p-6 bg-white rounded-2xl shadow-lg">
+                <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">NOVA Classification</h3>
+                <p class="text-gray-600">Uses the scientifically-backed NOVA food classification system.</p>
+            </div>
+            <div class="p-6 bg-white rounded-2xl shadow-lg">
+                <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">100% Free</h3>
+                <p class="text-gray-600">No ads, no subscriptions, no in-app purchases. Ever.</p>
             </div>
         </div>
     </div>
@@ -54,7 +115,7 @@
     <!-- Content Section -->
     <div class="max-w-4xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
         <!-- FAQ Section -->
-        <section class="mb-16">
+        <section id="faq" class="mb-16">
             <h2 class="text-3xl font-bold text-gray-900 mb-8">
                 Frequently Asked Questions
             </h2>
@@ -90,7 +151,7 @@
         </section>
 
         <!-- Contact Section -->
-        <section class="mb-16">
+        <section id="contact" class="mb-16">
             <div class="bg-gray-50 rounded-2xl p-8">
                 <h2 class="text-3xl font-bold text-gray-900 mb-4">
                     Contact Us
@@ -115,7 +176,7 @@
                     <a href="/terms.html" class="text-gray-500 hover:text-gray-700">Terms of Use</a>
                 </div>
                 <p class="text-gray-400 text-sm">
-                    © 2024 UPF Detector. All rights reserved.
+                    © 2025 UPF Detector. All rights reserved.
                 </p>
             </div>
         </section>
