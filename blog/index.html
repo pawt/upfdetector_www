@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - UPF Detector</title>
+    
+    <meta name="description" content="Read articles about ultra-processed foods, healthy eating, and the story behind UPF Detector app." />
+    <meta name="keywords" content="UPF Detector blog, ultra-processed foods, healthy eating, food scanner app, nutrition articles" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="UPF Detector Blog" />
+    <meta property="og:description" content="Articles about ultra-processed foods, healthy eating, and the story behind UPF Detector app." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://upfdetector.com/blog/" />
+    <link rel="canonical" href="https://upfdetector.com/blog/" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <script src="/components/include.js"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+    </style>
+</head>
+<body class="antialiased bg-white">
+    <div data-include="/components/navbar.html"></div>
+
+    <!-- Blog Index Content -->
+    <div class="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 pt-24 pb-16">
+        <h1 class="text-4xl font-bold text-gray-900 mb-8">Blog</h1>
+        
+        <div class="space-y-12">
+            <!-- Blog Post Card -->
+            <article class="border-b pb-8">
+                <time datetime="2025-03-11" class="text-gray-500">March 11, 2025</time>
+                <h2 class="text-2xl font-bold text-gray-900 mt-2 mb-4">
+                    <a href="/blog/why-ive-created-upf-detector.html" class="hover:text-orange-500">
+                        Why I've Created UPF Detector App
+                    </a>
+                </h2>
+                <p class="text-gray-600 mb-4">
+                    A story about making healthy food choices easier for everyone. Learn about the motivation behind creating the UPF Detector app and how it helps users identify ultra-processed foods.
+                </p>
+                <a href="/blog/why-ive-created-upf-detector.html" class="text-orange-500 hover:text-orange-600 font-medium">
+                    Read more →
+                </a>
+            </article>
+        </div>
+    </div>
+
+    <div data-include="/components/footer.html"></div>
+
+    <script>
+        // Load components when the page loads
+        window.addEventListener('load', includeHTML);
+    </script>
+</body>
+</html>

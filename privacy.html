@@ -7,6 +7,7 @@
     <title>UPF Detector - Privacy Policy</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <script src="/components/include.js"></script>
 
     <meta name="description" content="Privacy Policy for UPF Detector - Learn how we protect your data while helping you identify ultra-processed foods." />
     <meta name="robots" content="noindex, follow" />
@@ -31,17 +32,7 @@
 </head>
 
 <body class="antialiased bg-gray-50">
-    <!-- Navigation -->
-    <nav class="fixed w-full bg-white/80 backdrop-blur-lg z-50 border-b border-gray-100">
-        <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12"> <!-- Increased padding -->
-            <div class="flex justify-between items-center h-16">
-                <a href="/" class="text-xl font-bold text-orange-500">UPF Detector</a>
-                <div class="hidden sm:flex space-x-8">
-                    <a href="/" class="text-gray-600 hover:text-gray-900">Home</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <div data-include="/components/navbar.html"></div>
 
     <!-- Content -->
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
@@ -103,14 +94,12 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="mt-12 text-center">
-        <p class="text-gray-500 text-sm">© 2025 UPF Detector. All rights reserved.</p>
-        <p class="mt-2">
-            <a href="/" class="text-orange-500 hover:text-orange-600 text-sm">← Back to Home</a>
-        </p>
-    </footer>
-    </div>
+    <div data-include="/components/footer.html"></div>
+
+    <script>
+        // Load components when the page loads
+        window.addEventListener('load', includeHTML);
+    </script>
 </body>
 
 </html>
