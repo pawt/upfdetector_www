@@ -64,6 +64,41 @@
                 margin: 2.5rem 0;
                 box-shadow: 0 4px 6px rgba(255, 87, 51, 0.1);
             }
+            
+            /* Citation style */
+            sup {
+                font-size: 0.75em;
+                line-height: 0;
+                position: relative;
+                vertical-align: baseline;
+                top: -0.5em;
+            }
+            
+            .citation {
+                color: #2563eb;
+                font-weight: 600;
+                cursor: pointer;
+                text-decoration: none;
+            }
+            
+            .citation:hover {
+                text-decoration: underline;
+            }
+            
+            /* Reference list style */
+            .references {
+                font-size: 0.9rem;
+                line-height: 1.5;
+            }
+            
+            .references ol {
+                padding-left: 1.5rem;
+            }
+            
+            .references li {
+                margin-bottom: 0.75rem;
+                padding-left: 0.5rem;
+            }
         </style>
     </head>
     <body class="antialiased bg-white">
@@ -72,7 +107,7 @@
         <div class="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 pt-24 pb-16">
             <article class="prose lg:prose-lg">
                 <header class="mb-10">
-                    <time datetime="2025-04-15" class="text-gray-600">April 15, 2025</time>
+                    <time datetime="2025-04-09" class="text-gray-600">April 09, 2025</time>
                     <h1 class="text-4xl font-bold text-black mt-2 mb-4">What Makes a Food 'Ultra-Processed'? Understanding the NOVA Classification System</h1>
                     <div class="text-gray-700 text-lg">A simple guide to identifying different levels of food processing and why it matters.</div>
                 </header>
@@ -85,7 +120,7 @@
 
                 <!-- Blog post content with enhanced intro -->
                 <div class="space-y-6 text-gray-700">
-                    <p><strong>Did you know the average American consumes over 60% of their daily calories from ultra-processed foods?</strong> (Martinez Steele et al., 2016) Yet many of us struggle to identify exactly what makes a food "ultra-processed." With so many nutrition claims on packaging these days, it can be hard to know which foods are truly healthy. That's where the NOVA classification system comes in - a simple but powerful tool that helps us understand how processed our food really is.</p>
+                    <p><strong>Did you know the average American consumes over 60% of their daily calories from ultra-processed foods?</strong><sup class="citation"><a href="#ref1">1</a></sup> Yet many of us struggle to identify exactly what makes a food "ultra-processed." With so many nutrition claims on packaging these days, it can be hard to know which foods are truly healthy. That's where the NOVA classification system comes in - a simple but powerful tool that helps us understand how processed our food really is.</p>
 
                     <!-- Personal anecdote section -->
                     <div class="bg-orange-50 p-5 rounded-lg italic my-8">
@@ -96,7 +131,7 @@
                         <h2 class="text-2xl font-semibold text-black mt-8 mb-4">Beyond "Processed" vs. "Unprocessed"</h2>
                         <p>For years, we've heard that processed foods are bad and whole foods are good. But the reality is more nuanced. Not all processing is harmful - after all, cooking is a form of processing! What matters is the type and degree of processing, and that's exactly what the NOVA system helps us understand.</p>
 
-                        <p><a href="https://www.fsp.usp.br/nupens/en/food-classification-nova/" class="text-orange-500 hover:text-orange-600">Developed by researchers at the University of São Paulo in Brazil</a>, the NOVA classification has become the most widely used scientific system for categorizing foods based on processing (Monteiro et al., 2018). Unlike traditional systems that focus only on nutrients, NOVA looks at what happens to food before it reaches your plate.</p>
+                        <p><a href="https://www.fsp.usp.br/nupens/en/food-classification-nova/" class="text-orange-500 hover:text-orange-600">Developed by researchers at the University of São Paulo in Brazil</a>, the NOVA classification has become the most widely used scientific system for categorizing foods based on processing.<sup class="citation"><a href="#ref2">2</a></sup> Unlike traditional systems that focus only on nutrients, NOVA looks at what happens to food before it reaches your plate.</p>
                     </div>
 
                     <!-- Enhanced apple processing spectrum image -->
@@ -107,7 +142,7 @@
 
                     <div class="content-section">
                         <h2 class="text-2xl font-semibold text-black mt-10 mb-4">The Four NOVA Categories</h2>
-                        <p>NOVA divides all foods into four distinct groups based on the nature, purpose, and extent of processing (Monteiro et al., 2019). Let's break them down:</p>
+                        <p>NOVA divides all foods into four distinct groups based on the nature, purpose, and extent of processing.<sup class="citation"><a href="#ref3">3</a></sup> Let's break them down:</p>
 
                         <div class="gradient-section">
                             <h3 class="text-xl font-semibold text-black mb-2">Group 1: Unprocessed or Minimally Processed Foods</h3>
@@ -175,20 +210,20 @@
                         <h2 class="text-2xl font-semibold text-black mt-10 mb-4">Why Does the NOVA Classification Matter?</h2>
                         
                         <!-- Added statistical data -->
-                        <p>Research has consistently linked higher consumption of ultra-processed foods with increased health risks. <strong>According to recent studies, ultra-processed foods now make up approximately 73% of the US food supply (Baldridge et al., 2019) and account for about 60% of calorie intake in the average American diet (Martinez Steele et al., 2016).</strong></p>
+                        <p>Research has consistently linked higher consumption of ultra-processed foods with increased health risks. <strong>According to recent studies, ultra-processed foods now make up approximately 73% of the US food supply<sup class="citation"><a href="#ref4">4</a></sup> and account for about 60% of calorie intake in the average American diet.<sup class="citation"><a href="#ref1">1</a></sup></strong></p>
                         
                         <p>Higher consumption of UPFs is associated with increased risks of:</p>
                         
                         <ul class="list-disc pl-6 my-4 space-y-2">
-                            <li>Obesity and weight gain (Elizabeth et al., 2020)</li>
-                            <li>Type 2 diabetes (Srour et al., 2020)</li>
-                            <li>Heart disease (Srour et al., 2019)</li>
-                            <li>Cancer (Fiolet et al., 2018)</li>
-                            <li>Depression (Gómez-Donoso et al., 2020)</li>
-                            <li>All-cause mortality (risk of death from any cause) (Rico-Campà et al., 2019)</li>
+                            <li>Obesity and weight gain<sup class="citation"><a href="#ref5">5</a></sup></li>
+                            <li>Type 2 diabetes<sup class="citation"><a href="#ref6">6</a></sup></li>
+                            <li>Heart disease<sup class="citation"><a href="#ref7">7</a></sup></li>
+                            <li>Cancer<sup class="citation"><a href="#ref8">8</a></sup></li>
+                            <li>Depression<sup class="citation"><a href="#ref9">9</a></sup></li>
+                            <li>All-cause mortality (risk of death from any cause)<sup class="citation"><a href="#ref10">10</a></sup></li>
                         </ul>
                         
-                        <p>A groundbreaking 2019 study published in Cell Metabolism found that people eating ultra-processed foods consumed about 500 more calories per day than when they ate minimally processed foods, even when meals were matched for calories, sugars, fat, fiber, and macronutrients (Hall et al., 2019).</p>
+                        <p>A groundbreaking 2019 study published in Cell Metabolism found that people eating ultra-processed foods consumed about 500 more calories per day than when they ate minimally processed foods, even when meals were matched for calories, sugars, fat, fiber, and macronutrients.<sup class="citation"><a href="#ref11">11</a></sup></p>
                     </div>
 
                     <div class="content-section">
@@ -203,36 +238,6 @@
                         <p>It's important to note that the NOVA system isn't about creating fear or suggesting you must eliminate all processed foods. Most of us will include some ultra-processed foods in our diets occasionally. The goal is awareness and moderation.</p>
                         
                         <p>Nutritional science increasingly suggests that focusing on reducing ultra-processed foods might be more important than obsessing over specific nutrients like fats or carbs. By understanding the NOVA system, you're equipped with a powerful framework for making better food choices.</p>
-                    </div>
-
-                    <!-- References Section -->
-                    <div class="content-section bg-gray-50 p-6 rounded-xl">
-                        <h2 class="text-2xl font-semibold text-black mb-4">References</h2>
-                        <div class="text-sm space-y-3">
-                            <p>Baldridge AS, Almeida VBP, Fallon C, et al. (2019). "Ultra-processed Foods in the U.S. Food Supply: A Critical Review." <em>Public Health Nutrition</em>, 22(15):2704-2713.</p>
-                            
-                            <p>Elizabeth L, Machado P, Zinöcker M, et al. (2020). "Ultra-Processed Foods and Health Outcomes: A Narrative Review." <em>Nutrients</em>, 12(7):1955.</p>
-                            
-                            <p>Fiolet T, Srour B, Sellem L, et al. (2018). "Consumption of ultra-processed foods and cancer risk: results from NutriNet-Santé prospective cohort." <em>BMJ</em>, 360:k322.</p>
-                            
-                            <p>Gómez-Donoso C, Sánchez-Villegas A, Martínez-González MA, et al. (2020). "Ultra-processed food consumption and the incidence of depression in a Mediterranean cohort: the SUN Project." <em>European Journal of Nutrition</em>, 59(3):1093-1103.</p>
-                            
-                            <p>Hall KD, Ayuketah A, Brychta R, et al. (2019). "Ultra-processed diets cause excess calorie intake and weight gain: An inpatient randomized controlled trial of ad libitum food intake." <em>Cell Metabolism</em>, 30(1):67-77.e3.</p>
-                            
-                            <p>Martinez Steele E, Baraldi LG, Louzada ML, et al. (2016). "Ultra-processed foods and added sugars in the US diet: evidence from a nationally representative cross-sectional study." <em>BMJ Open</em>, 6(3):e009892.</p>
-                            
-                            <p>Monteiro CA, Cannon G, Levy RB, et al. (2016). "NOVA. The star shines bright." <em>World Nutrition</em>, 7(1-3):28-38.</p>
-                            
-                            <p>Monteiro CA, Cannon G, Moubarac JC, et al. (2018). "The UN Decade of Nutrition, the NOVA food classification and the trouble with ultra-processing." <em>Public Health Nutrition</em>, 21(1):5-17.</p>
-                            
-                            <p>Monteiro CA, Cannon G, Lawrence M, et al. (2019). "Ultra-processed foods, diet quality, and health using the NOVA classification system." Rome: FAO.</p>
-                            
-                            <p>Rico-Campà A, Martínez-González MA, Alvarez-Alvarez I, et al. (2019). "Association between consumption of ultra-processed foods and all cause mortality: SUN prospective cohort study." <em>BMJ</em>, 365:l1949.</p>
-                            
-                            <p>Srour B, Fezeu LK, Kesse-Guyot E, et al. (2019). "Ultra-processed food intake and risk of cardiovascular disease: prospective cohort study (NutriNet-Santé)." <em>BMJ</em>, 365:l1451.</p>
-                            
-                            <p>Srour B, Fezeu LK, Kesse-Guyot E, et al. (2020). "Ultra-processed food consumption and risk of type 2 diabetes among participants of the NutriNet-Santé prospective cohort." <em>JAMA Internal Medicine</em>, 180(2):283-291.</p>
-                        </div>
                     </div>
 
                     <!-- Enhanced call-to-action -->
@@ -257,6 +262,36 @@
                             </a>
                         </div>
                     </div>
+
+                    <!-- References section with numeric formatting -->
+                    <div id="references" class="content-section bg-gray-50 p-6 rounded-xl">
+                        <h2 class="text-2xl font-semibold text-black mb-4">References</h2>
+                        <div class="references">
+                            <ol>
+                                <li id="ref1">Martinez Steele E, Baraldi LG, Louzada ML, et al. (2016). "Ultra-processed foods and added sugars in the US diet: evidence from a nationally representative cross-sectional study." <em>BMJ Open</em>, 6(3):e009892.</li>
+                                
+                                <li id="ref2">Monteiro CA, Cannon G, Moubarac JC, et al. (2018). "The UN Decade of Nutrition, the NOVA food classification and the trouble with ultra-processing." <em>Public Health Nutrition</em>, 21(1):5-17.</li>
+                                
+                                <li id="ref3">Monteiro CA, Cannon G, Lawrence M, et al. (2019). "Ultra-processed foods, diet quality, and health using the NOVA classification system." Rome: FAO.</li>
+                                
+                                <li id="ref4">Baldridge AS, Almeida VBP, Fallon C, et al. (2019). "Ultra-processed Foods in the U.S. Food Supply: A Critical Review." <em>Public Health Nutrition</em>, 22(15):2704-2713.</li>
+                                
+                                <li id="ref5">Elizabeth L, Machado P, Zinöcker M, et al. (2020). "Ultra-Processed Foods and Health Outcomes: A Narrative Review." <em>Nutrients</em>, 12(7):1955.</li>
+                                
+                                <li id="ref6">Srour B, Fezeu LK, Kesse-Guyot E, et al. (2020). "Ultra-processed food consumption and risk of type 2 diabetes among participants of the NutriNet-Santé prospective cohort." <em>JAMA Internal Medicine</em>, 180(2):283-291.</li>
+                                
+                                <li id="ref7">Srour B, Fezeu LK, Kesse-Guyot E, et al. (2019). "Ultra-processed food intake and risk of cardiovascular disease: prospective cohort study (NutriNet-Santé)." <em>BMJ</em>, 365:l1451.</li>
+                                
+                                <li id="ref8">Fiolet T, Srour B, Sellem L, et al. (2018). "Consumption of ultra-processed foods and cancer risk: results from NutriNet-Santé prospective cohort." <em>BMJ</em>, 360:k322.</li>
+                                
+                                <li id="ref9">Gómez-Donoso C, Sánchez-Villegas A, Martínez-González MA, et al. (2020). "Ultra-processed food consumption and the incidence of depression in a Mediterranean cohort: the SUN Project." <em>European Journal of Nutrition</em>, 59(3):1093-1103.</li>
+                                
+                                <li id="ref10">Rico-Campà A, Martínez-González MA, Alvarez-Alvarez I, et al. (2019). "Association between consumption of ultra-processed foods and all cause mortality: SUN prospective cohort study." <em>BMJ</em>, 365:l1949.</li>
+                                
+                                <li id="ref11">Hall KD, Ayuketah A, Brychta R, et al. (2019). "Ultra-processed diets cause excess calorie intake and weight gain: An inpatient randomized controlled trial of ad libitum food intake." <em>Cell Metabolism</em>, 30(1):67-77.e3.</li>
+                            </ol>
+                        </div>
+                    </div>
                 </div>
             </article>
         </div>
@@ -269,7 +304,12 @@
             
             .download-btn:hover {
                 transform: translateY(-1px);
-                box-shadow: 0 4px 6px rgba(255, 87, 51, 0.3);
+                box-shadow: 0 4px 12px rgba(255, 87, 51, 0.3);
+            }
+
+            /* Add smooth scrolling for reference links */
+            html {
+                scroll-behavior: smooth;
             }
         </style>
 

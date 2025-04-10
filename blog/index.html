@@ -1,74 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - UPF Detector</title>
-    
-    <meta name="description" content="Read articles about ultra-processed foods, healthy eating, and the story behind UPF Detector app." />
-    <meta name="keywords" content="UPF Detector blog, ultra-processed foods, healthy eating, food scanner app, nutrition articles" />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="UPF Detector Blog" />
-    <meta property="og:description" content="Articles about ultra-processed foods, healthy eating, and the story behind UPF Detector app." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://upfdetector.com/blog/" />
-    <link rel="canonical" href="https://upfdetector.com/blog/" />
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>What Makes a Food 'Ultra-Processed'? Understanding the NOVA Classification System</title>
+        <meta name="description" content="Learn how to identify ultra-processed foods using the NOVA classification system. Understand the scientific criteria behind food processing categories and make healthier choices." />
+        <meta name="keywords" content="NOVA classification, ultra-processed foods, UPF, food processing, healthy eating, processed food categories, NOVA system, UPF detector app, food processing scanner, ultra-processed food checker" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="What Makes a Food 'Ultra-Processed'? Understanding NOVA Classification" />
+        <meta property="og:description" content="Discover how to identify ultra-processed foods using the scientific NOVA classification system and why it matters for your health." />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://upfdetector.com/blog/what-makes-food-ultra-processed" />
+        <link rel="canonical" href="https://upfdetector.com/blog/what-makes-food-ultra-processed" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <script src="/components/include.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <script src="/components/include.js"></script>
 
-    <style>
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-        }
-    </style>
-</head>
-<body class="antialiased bg-white">
-    <div data-include="/components/navbar.html"></div>
+        <style>
+            body {
+                font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            }
+            
+            /* Enhanced paragraph spacing */
+            .prose p {
+                margin-bottom: 1.5rem; /* Add more space between paragraphs */
+            }
+            
+            /* Fix for lists - to prevent too much spacing on list items */
+            .prose ul li p, .prose ol li p {
+                margin-bottom: 0.5rem;
+            }
+            
+            /* Enhanced section spacing */
+            .content-section {
+                margin-bottom: 3rem;
+                padding-bottom: 2rem;
+                border-bottom: 1px solid #f3f4f6;
+            }
+            
+            /* Gradient background for key sections */
+            .gradient-section {
+                background: linear-gradient(to right, rgba(255, 247, 237, 0.5), rgba(255, 247, 237, 0));
+                padding: 1.5rem;
+                border-radius: 0.75rem;
+                margin: 2rem 0;
+            }
+            
+            /* Enhanced quick reference box */
+            .quick-reference {
+                background-color: #f3f8ff;
+                border-left: 4px solid #3b82f6;
+                padding: 1.5rem;
+                border-radius: 0.5rem;
+                margin: 2rem 0;
+            }
+            
+            /* Enhanced CTA box */
+            .cta-box {
+                background: linear-gradient(135deg, #ffefe8 0%, #fff5f5 100%);
+                border-radius: 1rem;
+                padding: 2rem;
+                margin: 2.5rem 0;
+                box-shadow: 0 4px 6px rgba(255, 87, 51, 0.1);
+            }
+            
+            /* Citation style */
+            sup {
+                font-size: 0.75em;
+                line-height: 0;
+                position: relative;
+                vertical-align: baseline;
+                top: -0.5em;
+            }
+            
+            .citation {
+                color: #2563eb;
+                font-weight: 600;
+                cursor: pointer;
+                text-decoration: none;
+            }
+            
+            .citation:hover {
+                text-decoration: underline;
+            }
+            
+            /* Reference list style */
+            .references {
+                font-size: 0.9rem;
+                line-height: 1.5;
+            }
+            
+            .references ol {
+                padding-left: 1.5rem;
+                counter-reset: none; /* Disable automatic counters */
+            }
+            
+            .references li {
+                margin-bottom: 0.75rem;
+                padding-left: 0.5rem;
+                list-style: none; /* Remove default bullets/numbers */
+                position: relative;
+            }
+            
+            .reference-number {
+                font-weight: bold;
+                color: #2563eb;
+                margin-right: 0.5rem;
+            }
+        </style>
+    </head>
+    <body class="antialiased bg-white">
+        <div data-include="/components/navbar.html"></div>
+        <!-- Blog Post Content -->
+        <div class="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 pt-24 pb-16">
+            <article class="prose lg:prose-lg">
+                <header class="mb-10">
+                    <time datetime="2025-04-15" class="text-gray-600">April 15, 2025</time>
+                    <h1 class="text-4xl font-bold text-black mt-2 mb-4">What Makes a Food 'Ultra-Processed'? Understanding the NOVA Classification System</h1>
+                    <div class="text-gray-700 text-lg">A simple guide to identifying different levels of food processing and why it matters.</div>
+                </header>
 
-    <!-- Blog Index Content -->
-    <div class="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 pt-24 pb-16">
-        <h1 class="text-4xl font-bold text-gray-900 mb-8">Blog</h1>
-        
-        <div class="space-y-12">
-            <!-- Blog Post Card -->
-            <article class="border-b pb-8">
-                <time datetime="2025-04-15" class="text-gray-500">April 09, 2025</time>
-                <h2 class="text-2xl font-bold text-gray-900 mt-2 mb-4">
-                  <a href="how-to-identify-ultra-processed-foods.html" class="hover:text-orange-500">
-                    What Makes a Food 'Ultra-Processed'? Understanding the NOVA Classification System
-                  </a>
-                </h2>
-                <p class="text-gray-600 mb-4">
-                  Learn how to identify ultra-processed foods in your diet using the scientific NOVA system. Discover the four categories of food processing and why they matter for your health choices.
-                </p>
-                <a href="how-to-identify-ultra-processed-foods.html" class="text-orange-500 hover:text-orange-600 font-medium">
-                  Read more →
-                </a>
-              </article>
-            <article class="border-b pb-8">
-                <time datetime="2025-03-11" class="text-gray-500">March 11, 2025</time>
-                <h2 class="text-2xl font-bold text-gray-900 mt-2 mb-4">
-                    <a href="/blog/why-ive-created-upf-detector.html" class="hover:text-orange-500">
-                        Why I've Created UPF Detector App
-                    </a>
-                </h2>
-                <p class="text-gray-600 mb-4">
-                    A story about making healthy food choices easier for everyone. Learn about the motivation behind creating the UPF Detector app and how it helps users identify ultra-processed foods.
-                </p>
-                <a href="/blog/why-ive-created-upf-detector.html" class="text-orange-500 hover:text-orange-600 font-medium">
-                    Read more →
-                </a>
+                <!-- Enhanced image with caption -->
+                <div class="mb-10">
+                    <img src="/img/upf_detector_nova_classification.png" alt="NOVA Food Classification System Chart showing all 4 groups" class="w-full rounded-xl shadow-lg">
+                    <p class="text-sm text-gray-500 mt-2 text-center">The NOVA food classification system divides foods into four distinct groups based on processing level</p>
+                </div>
+
+                <!-- Blog post content with enhanced intro -->
+                <div class="space-y-6 text-gray-700">
+                    <p><strong>Did you know the average American consumes over 60% of their daily calories from ultra-processed foods?</strong><sup class="citation"><a href="#ref1">1</a></sup> Yet many of us struggle to identify exactly what makes a food "ultra-processed." With so many nutrition claims on packaging these days, it can be hard to know which foods are truly healthy. That's where the NOVA classification system comes in - a simple but powerful tool that helps us understand how processed our food really is.</p>
+
+                    <!-- Personal anecdote section -->
+                    <div class="bg-orange-50 p-5 rounded-lg italic my-8">
+                        <p>When I first started paying attention to food processing levels, I was shocked to discover that many products marketed as "healthy" were actually highly processed. A granola bar I'd been eating daily had over 30 ingredients, most of which I couldn't pronounce! This realization sparked my journey to create a tool that would make identifying ultra-processed foods easier for everyone.</p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="text-2xl font-semibold text-black mt-8 mb-4">Beyond "Processed" vs. "Unprocessed"</h2>
+                        <p>For years, we've heard that processed foods are bad and whole foods are good. But the reality is more nuanced. Not all processing is harmful - after all, cooking is a form of processing! What matters is the type and degree of processing, and that's exactly what the NOVA system helps us understand.</p>
+
+                        <p><a href="https://www.fsp.usp.br/nupens/en/food-classification-nova/" class="text-orange-500 hover:text-orange-600">Developed by researchers at the University of São Paulo in Brazil</a>, the NOVA classification has become the most widely used scientific system for categorizing foods based on processing.<sup class="citation"><a href="#ref2">2</a></sup> Unlike traditional systems that focus only on nutrients, NOVA looks at what happens to food before it reaches your plate.</p>
+                    </div>
+
+                    <!-- Enhanced apple processing spectrum image -->
+                    <div class="my-10">
+                        <img src="/img/upf_detector_apple_levels_of_processing.png" alt="Visual showing spectrum of food processing: from whole apple to apple-flavored drink" class="w-full rounded-xl shadow-lg">
+                        <p class="text-sm text-gray-500 mt-2 text-center">The spectrum of processing: from minimally processed whole foods to ultra-processed products</p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="text-2xl font-semibold text-black mt-10 mb-4">The Four NOVA Categories</h2>
+                        <p>NOVA divides all foods into four distinct groups based on the nature, purpose, and extent of processing.<sup class="citation"><a href="#ref3">3</a></sup> Let's break them down:</p>
+
+                        <div class="gradient-section">
+                            <h3 class="text-xl font-semibold text-black mb-2">Group 1: Unprocessed or Minimally Processed Foods</h3>
+                            <p>These are natural foods altered by processes like cleaning, removing inedible parts, drying, crushing, or pasteurization. The key point is that nothing is added – no salt, sugar, oils or other substances.</p>
+                            <p><strong>Examples:</strong> Fresh fruits and vegetables, dried beans, nuts, meats, milk, eggs, herbs, and spices.</p>
+                        </div>
+                        
+                        <div class="gradient-section">
+                            <h3 class="text-xl font-semibold text-black mb-2">Group 2: Processed Culinary Ingredients</h3>
+                            <p>These are substances obtained directly from Group 1 foods or from nature by processes like pressing, refining, grinding, or drying. They're rarely eaten by themselves and are mainly used to prepare and cook Group 1 foods.</p>
+                            <p><strong>Examples:</strong> Salt, sugar, honey, vegetable oils, butter, and lard.</p>
+                        </div>
+
+                        <div class="gradient-section">
+                            <h3 class="text-xl font-semibold text-black mb-2">Group 3: Processed Foods</h3>
+                            <p>These are relatively simple products made by adding Group 2 ingredients (like salt, sugar, or oil) to Group 1 foods. Most processed foods have two or three ingredients and are recognizable as modified versions of the original foods.</p>
+                            <p><strong>Examples:</strong> Canned vegetables, fruits in syrup, cheese, freshly made bread, and canned fish.</p>
+                        </div>
+
+                        <div class="gradient-section">
+                            <h3 class="text-xl font-semibold text-black mb-2">Group 4: Ultra-Processed Foods (UPFs)</h3>
+                            <p>This is where things get interesting. Ultra-processed foods are industrial formulations made mostly or entirely from substances extracted from foods (oils, fats, sugar, starch, proteins), derived from food constituents (hydrogenated fats, modified starch), or synthesized in laboratories (flavor enhancers, colors, and other additives used to make the product hyper-palatable).</p>
+                            
+                            <p>The key characteristic of ultra-processed foods is that they contain ingredients you wouldn't find in a typical home kitchen.</p>
+                            
+                            <p><strong>Examples:</strong> Packaged snacks, cookies, ice cream, candy, mass-produced breads, breakfast cereals, energy bars, sodas, flavored yogurts, and ready-to-heat meals.</p>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="text-2xl font-semibold text-black mt-10 mb-4">How to Spot an Ultra-Processed Food</h2>
+                        <p>The easiest way to identify an ultra-processed food is to check the ingredients list. Look for these telltale signs:</p>
+
+                        <ul class="list-disc pl-6 my-4 space-y-2">
+                            <li>A long list of ingredients (often more than 5)</li>
+                            <li>Ingredients you don't recognize or can't pronounce</li>
+                            <li>Additives with numbers (E-numbers in Europe) or chemical-sounding names</li>
+                            <li>Multiple types of sugar (corn syrup, dextrose, sucrose, etc.)</li>
+                            <li>Refined oils, especially hydrogenated or interesterified oils</li>
+                            <li>Flavor enhancers, colors, emulsifiers, and stabilizers</li>
+                            <li>Protein isolates and modified starches</li>
+                        </ul>
+                        
+                        <!-- Added Quick Reference Box -->
+                        <div class="quick-reference">
+                            <h4 class="font-bold text-lg mb-2">UPF Detector Quick Guide</h4>
+                            <p class="mb-2">5-Second UPF Check:</p>
+                            <ol class="list-decimal pl-6 space-y-1">
+                                <li>Look at the ingredient count (>5 often means UPF)</li>
+                                <li>Check for unrecognizable ingredients</li>
+                                <li>Look for multiple types of added sugars</li>
+                                <li>Check for additives (colors, flavors, stabilizers)</li>
+                                <li>When in doubt, scan with UPF Detector app!</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- Enhanced shopping cart comparison image -->
+                    <div class="my-10">
+                        <img src="/img/upf_detector_whole_food_vs_upf_food.png" alt="Comparison of shopping cart with ultra-processed foods vs whole foods" class="w-full rounded-xl shadow-lg">
+                        <p class="text-sm text-gray-500 mt-2 text-center">Transitioning from ultra-processed to minimally processed foods can dramatically improve your diet quality</p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="text-2xl font-semibold text-black mt-10 mb-4">Why Does the NOVA Classification Matter?</h2>
+                        
+                        <!-- Added statistical data -->
+                        <p>Research has consistently linked higher consumption of ultra-processed foods with increased health risks. <strong>According to recent studies, ultra-processed foods now make up approximately 73% of the US food supply<sup class="citation"><a href="#ref4">4</a></sup> and account for about 60% of calorie intake in the average American diet.<sup class="citation"><a href="#ref1">1</a></sup></strong></p>
+                        
+                        <p>Higher consumption of UPFs is associated with increased risks of:</p>
+                        
+                        <ul class="list-disc pl-6 my-4 space-y-2">
+                            <li>Obesity and weight gain<sup class="citation"><a href="#ref5">5</a></sup></li>
+                            <li>Type 2 diabetes<sup class="citation"><a href="#ref6">6</a></sup></li>
+                            <li>Heart disease<sup class="citation"><a href="#ref7">7</a></sup></li>
+                            <li>Cancer<sup class="citation"><a href="#ref8">8</a></sup></li>
+                            <li>Depression<sup class="citation"><a href="#ref9">9</a></sup></li>
+                            <li>All-cause mortality (risk of death from any cause)<sup class="citation"><a href="#ref10">10</a></sup></li>
+                        </ul>
+                        
+                        <p>A groundbreaking 2019 study published in Cell Metabolism found that people eating ultra-processed foods consumed about 500 more calories per day than when they ate minimally processed foods, even when meals were matched for calories, sugars, fat, fiber, and macronutrients.<sup class="citation"><a href="#ref11">11</a></sup></p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="text-2xl font-semibold text-black mt-10 mb-4">The Practical Challenge: Identifying UPFs While Shopping</h2>
+                        <p>While the NOVA system is scientifically sound, applying it in the real world can be challenging. Reading every ingredient list while grocery shopping is time-consuming, and many ingredients are unfamiliar to most shoppers.</p>
+                        
+                        <p>This is precisely why I created the UPF Detector app. By simply scanning a barcode, you can instantly know whether a food is ultra-processed according to the NOVA classification. It takes the guesswork out of shopping and helps you make healthier choices without needing to become a food scientist.</p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2 class="text-2xl font-semibold text-black mt-10 mb-4">Finding Balance in the Real World</h2>
+                        <p>It's important to note that the NOVA system isn't about creating fear or suggesting you must eliminate all processed foods. Most of us will include some ultra-processed foods in our diets occasionally. The goal is awareness and moderation.</p>
+                        
+                        <p>Nutritional science increasingly suggests that focusing on reducing ultra-processed foods might be more important than obsessing over specific nutrients like fats or carbs. By understanding the NOVA system, you're equipped with a powerful framework for making better food choices.</p>
+                    </div>
+
+                    <!-- Enhanced call-to-action -->
+                    <div class="cta-box">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Identify Ultra-Processed Foods Instantly</h3>
+                        <p class="font-medium text-gray-700 mb-4">Ready to easily spot ultra-processed foods while shopping? Download the UPF Detector app today and take the guesswork out of grocery shopping.</p>
+                        
+                        <!-- Added testimonial -->
+                        <div class="bg-white p-4 rounded-lg mb-6 italic text-gray-600">
+                            <p>"After using UPF Detector for just two weeks, I realized that over 70% of my usual grocery items were ultra-processed. The app has completely changed how I shop!"</p>
+                            <p class="text-right font-medium mt-2">— Sarah T., App User</p>
+                        </div>
+                        
+                        <!-- Download Button -->
+                        <div class="text-center">
+                            <a href="https://apps.apple.com/pl/app/upf-detector-food-scanner/id6738797472" 
+                            class="download-btn inline-flex items-center px-8 py-4 rounded-xl text-white font-semibold shadow-lg">
+                                <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17.0754 12.3188C17.0954 10.7312 17.9177 9.35625 19.2627 8.41875C18.4427 7.275 17.2127 6.58125 15.6127 6.32625C14.1002 6.07875 12.4452 7.03125 11.6602 7.03125C10.8377 7.03125 9.38772 6.35625 8.16772 6.35625C6.01772 6.38625 3.71772 8.0625 3.71772 11.4688C3.71772 12.5812 3.91772 13.7313 4.31772 14.9188C4.85272 16.4813 6.71272 19.9688 8.66272 19.9062C9.81772 19.875 10.6427 19.0875 12.1177 19.0875C13.5427 19.0875 14.3127 19.9062 15.5927 19.9062C17.5652 19.875 19.2402 16.7063 19.7502 15.1375C17.1902 13.9125 17.0754 12.3938 17.0754 12.3188ZM14.7377 4.725C15.8402 3.4125 15.7377 2.2125 15.7127 1.875C14.7252 1.9375 13.5927 2.53125 12.9377 3.2625C12.2127 4.05 11.7502 5.0625 11.8502 6.30625C12.9227 6.39375 13.9127 5.7375 14.7377 4.725Z"/>
+                                </svg>
+                                Download on App Store
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- References section with numeric formatting -->
+                    <div id="references" class="content-section bg-gray-50 p-6 rounded-xl">
+                        <h2 class="text-2xl font-semibold text-black mb-4">References</h2>
+                        <div class="references">
+                            <ol class="list-decimal">
+                                <li id="ref1"><span class="reference-number">1.</span> Martinez Steele E, Baraldi LG, Louzada ML, et al. (2016). "Ultra-processed foods and added sugars in the US diet: evidence from a nationally representative cross-sectional study." <em>BMJ Open</em>, 6(3):e009892.</li>
+                                
+                                <li id="ref2"><span class="reference-number">2.</span> Monteiro CA, Cannon G, Moubarac JC, et al. (2018). "The UN Decade of Nutrition, the NOVA food classification and the trouble with ultra-processing." <em>Public Health Nutrition</em>, 21(1):5-17.</li>
+                                
+                                <li id="ref3"><span class="reference-number">3.</span> Monteiro CA, Cannon G, Lawrence M, et al. (2019). "Ultra-processed foods, diet quality, and health using the NOVA classification system." Rome: FAO.</li>
+                                
+                                <li id="ref4"><span class="reference-number">4.</span> Baldridge AS, Almeida VBP, Fallon C, et al. (2019). "Ultra-processed Foods in the U.S. Food Supply: A Critical Review." <em>Public Health Nutrition</em>, 22(15):2704-2713.</li>
+                                
+                                <li id="ref5"><span class="reference-number">5.</span> Elizabeth L, Machado P, Zinöcker M, et al. (2020). "Ultra-Processed Foods and Health Outcomes: A Narrative Review." <em>Nutrients</em>, 12(7):1955.</li>
+                                
+                                <li id="ref6"><span class="reference-number">6.</span> Srour B, Fezeu LK, Kesse-Guyot E, et al. (2020). "Ultra-processed food consumption and risk of type 2 diabetes among participants of the NutriNet-Santé prospective cohort." <em>JAMA Internal Medicine</em>, 180(2):283-291.</li>
+                                
+                                <li id="ref7"><span class="reference-number">7.</span> Srour B, Fezeu LK, Kesse-Guyot E, et al. (2019). "Ultra-processed food intake and risk of cardiovascular disease: prospective cohort study (NutriNet-Santé)." <em>BMJ</em>, 365:l1451.</li>
+                                
+                                <li id="ref8"><span class="reference-number">8.</span> Fiolet T, Srour B, Sellem L, et al. (2018). "Consumption of ultra-processed foods and cancer risk: results from NutriNet-Santé prospective cohort." <em>BMJ</em>, 360:k322.</li>
+                                
+                                <li id="ref9"><span class="reference-number">9.</span> Gómez-Donoso C, Sánchez-Villegas A, Martínez-González MA, et al. (2020). "Ultra-processed food consumption and the incidence of depression in a Mediterranean cohort: the SUN Project." <em>European Journal of Nutrition</em>, 59(3):1093-1103.</li>
+                                
+                                <li id="ref10"><span class="reference-number">10.</span> Rico-Campà A, Martínez-González MA, Alvarez-Alvarez I, et al. (2019). "Association between consumption of ultra-processed foods and all cause mortality: SUN prospective cohort study." <em>BMJ</em>, 365:l1949.</li>
+                                
+                                <li id="ref11"><span class="reference-number">11.</span> Hall KD, Ayuketah A, Brychta R, et al. (2019). "Ultra-processed diets cause excess calorie intake and weight gain: An inpatient randomized controlled trial of ad libitum food intake." <em>Cell Metabolism</em>, 30(1):67-77.e3.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
             </article>
         </div>
-    </div>
 
-    <div data-include="/components/footer.html"></div>
+        <style>
+            .download-btn {
+                background: linear-gradient(135deg, #FF5733 0%, #FF4444 100%);
+                transition: all 0.3s ease;
+            }
+            
+            .download-btn:hover {
+                transform: translateY(-1px);
+                box-shadow: 0 4px 12px rgba(255, 87, 51, 0.3);
+            }
 
-    <script>
-        // Load components when the page loads
-        window.addEventListener('load', includeHTML);
-    </script>
+            /* Add smooth scrolling for reference links */
+            html {
+                scroll-behavior: smooth;
+            }
+        </style>
+
+        <div data-include="/components/footer.html"></div>
+
+        <script>
+            // Load components when the page loads
+            window.addEventListener('load', includeHTML);
+        </script>
+
 </body>
 </html>
