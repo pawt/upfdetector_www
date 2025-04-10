@@ -99,6 +99,32 @@
                 margin-bottom: 0.75rem;
                 padding-left: 0.5rem;
             }
+
+            .download-btn {
+                background: linear-gradient(135deg, #FF5733 0%, #FF4444 100%);
+                transition: all 0.3s ease;
+            }
+            
+            .download-btn:hover {
+                transform: translateY(-1px);
+                box-shadow: 0 4px 12px rgba(255, 87, 51, 0.3);
+            }
+
+            /* Add smooth scrolling for reference links */
+            html {
+                scroll-behavior: smooth;
+            }
+
+            .ref-number {
+                display: inline-block;
+                min-width: 1.5rem;
+            }
+            
+            /* Make sure items don't collapse */
+            .references li {
+                display: flex;
+                align-items: baseline;
+            }
         </style>
     </head>
     <body class="antialiased bg-white">
@@ -263,55 +289,72 @@
                         </div>
                     </div>
 
-                    <!-- References section with numeric formatting -->
+                    <!-- References section with clear numbering -->
                     <div id="references" class="content-section bg-gray-50 p-6 rounded-xl">
                         <h2 class="text-2xl font-semibold text-black mb-4">References</h2>
                         <div class="references">
-                            <ol>
-                                <li id="ref1">Martinez Steele E, Baraldi LG, Louzada ML, et al. (2016). "Ultra-processed foods and added sugars in the US diet: evidence from a nationally representative cross-sectional study." <em>BMJ Open</em>, 6(3):e009892.</li>
+                            <ol class="list-none">
+                                <li id="ref1" class="flex mb-4">
+                                    <span class="ref-number mr-3 text-blue-600">1.</span>
+                                    <span>Martinez Steele E, Baraldi LG, Louzada ML, et al. (2016). "Ultra-processed foods and added sugars in the US diet: evidence from a nationally representative cross-sectional study." <em>BMJ Open</em>, 6(3):e009892.</span>
+                                </li>
                                 
-                                <li id="ref2">Monteiro CA, Cannon G, Moubarac JC, et al. (2018). "The UN Decade of Nutrition, the NOVA food classification and the trouble with ultra-processing." <em>Public Health Nutrition</em>, 21(1):5-17.</li>
+                                <li id="ref2" class="flex mb-4">
+                                    <span class="ref-number mr-3 text-blue-600">2.</span>
+                                    <span>Monteiro CA, Cannon G, Moubarac JC, et al. (2018). "The UN Decade of Nutrition, the NOVA food classification and the trouble with ultra-processing." <em>Public Health Nutrition</em>, 21(1):5-17.</span>
+                                </li>
                                 
-                                <li id="ref3">Monteiro CA, Cannon G, Lawrence M, et al. (2019). "Ultra-processed foods, diet quality, and health using the NOVA classification system." Rome: FAO.</li>
+                                <li id="ref3" class="flex mb-4">
+                                    <span class="ref-number mr-3 text-blue-600">3.</span>
+                                    <span>Monteiro CA, Cannon G, Lawrence M, et al. (2019). "Ultra-processed foods, diet quality, and health using the NOVA classification system." Rome: FAO.</span>
+                                </li>
                                 
-                                <li id="ref4">Baldridge AS, Almeida VBP, Fallon C, et al. (2019). "Ultra-processed Foods in the U.S. Food Supply: A Critical Review." <em>Public Health Nutrition</em>, 22(15):2704-2713.</li>
+                                <li id="ref4" class="flex mb-4">
+                                    <span class="ref-number mr-3 text-blue-600">4.</span>
+                                    <span>Baldridge AS, Almeida VBP, Fallon C, et al. (2019). "Ultra-processed Foods in the U.S. Food Supply: A Critical Review." <em>Public Health Nutrition</em>, 22(15):2704-2713.</span>
+                                </li>
                                 
-                                <li id="ref5">Elizabeth L, Machado P, Zinöcker M, et al. (2020). "Ultra-Processed Foods and Health Outcomes: A Narrative Review." <em>Nutrients</em>, 12(7):1955.</li>
+                                <li id="ref5" class="flex mb-4">
+                                    <span class="ref-number mr-3 text-blue-600">5.</span>
+                                    <span>Elizabeth L, Machado P, Zinöcker M, et al. (2020). "Ultra-Processed Foods and Health Outcomes: A Narrative Review." <em>Nutrients</em>, 12(7):1955.</span>
+                                </li>
                                 
-                                <li id="ref6">Srour B, Fezeu LK, Kesse-Guyot E, et al. (2020). "Ultra-processed food consumption and risk of type 2 diabetes among participants of the NutriNet-Santé prospective cohort." <em>JAMA Internal Medicine</em>, 180(2):283-291.</li>
+                                <li id="ref6" class="flex mb-4">
+                                    <span class="ref-number mr-3 text-blue-600">6.</span>
+                                    <span>Srour B, Fezeu LK, Kesse-Guyot E, et al. (2020). "Ultra-processed food consumption and risk of type 2 diabetes among participants of the NutriNet-Santé prospective cohort." <em>JAMA Internal Medicine</em>, 180(2):283-291.</span>
+                                </li>
                                 
-                                <li id="ref7">Srour B, Fezeu LK, Kesse-Guyot E, et al. (2019). "Ultra-processed food intake and risk of cardiovascular disease: prospective cohort study (NutriNet-Santé)." <em>BMJ</em>, 365:l1451.</li>
+                                <li id="ref7" class="flex mb-4">
+                                    <span class="ref-number mr-3 text-blue-600">7.</span>
+                                    <span>Srour B, Fezeu LK, Kesse-Guyot E, et al. (2019). "Ultra-processed food intake and risk of cardiovascular disease: prospective cohort study (NutriNet-Santé)." <em>BMJ</em>, 365:l1451.</span>
+                                </li>
                                 
-                                <li id="ref8">Fiolet T, Srour B, Sellem L, et al. (2018). "Consumption of ultra-processed foods and cancer risk: results from NutriNet-Santé prospective cohort." <em>BMJ</em>, 360:k322.</li>
+                                <li id="ref8" class="flex mb-4">
+                                    <span class="ref-number mr-3 text-blue-600">8.</span>
+                                    <span>Fiolet T, Srour B, Sellem L, et al. (2018). "Consumption of ultra-processed foods and cancer risk: results from NutriNet-Santé prospective cohort." <em>BMJ</em>, 360:k322.</span>
+                                </li>
                                 
-                                <li id="ref9">Gómez-Donoso C, Sánchez-Villegas A, Martínez-González MA, et al. (2020). "Ultra-processed food consumption and the incidence of depression in a Mediterranean cohort: the SUN Project." <em>European Journal of Nutrition</em>, 59(3):1093-1103.</li>
+                                <li id="ref9" class="flex mb-4">
+                                    <span class="ref-number mr-3 text-blue-600">9.</span>
+                                    <span>Gómez-Donoso C, Sánchez-Villegas A, Martínez-González MA, et al. (2020). "Ultra-processed food consumption and the incidence of depression in a Mediterranean cohort: the SUN Project." <em>European Journal of Nutrition</em>, 59(3):1093-1103.</span>
+                                </li>
                                 
-                                <li id="ref10">Rico-Campà A, Martínez-González MA, Alvarez-Alvarez I, et al. (2019). "Association between consumption of ultra-processed foods and all cause mortality: SUN prospective cohort study." <em>BMJ</em>, 365:l1949.</li>
+                                <li id="ref10" class="flex mb-4">
+                                    <span class="ref-number mr-3 text-blue-600">10.</span>
+                                    <span>Rico-Campà A, Martínez-González MA, Alvarez-Alvarez I, et al. (2019). "Association between consumption of ultra-processed foods and all cause mortality: SUN prospective cohort study." <em>BMJ</em>, 365:l1949.</span>
+                                </li>
                                 
-                                <li id="ref11">Hall KD, Ayuketah A, Brychta R, et al. (2019). "Ultra-processed diets cause excess calorie intake and weight gain: An inpatient randomized controlled trial of ad libitum food intake." <em>Cell Metabolism</em>, 30(1):67-77.e3.</li>
+                                <li id="ref11" class="flex mb-4">
+                                    <span class="ref-number mr-3 text-blue-600">11.</span>
+                                    <span>Hall KD, Ayuketah A, Brychta R, et al. (2019). "Ultra-processed diets cause excess calorie intake and weight gain: An inpatient randomized controlled trial of ad libitum food intake." <em>Cell Metabolism</em>, 30(1):67-77.e3.</span>
+                                </li>
                             </ol>
                         </div>
                     </div>
+
                 </div>
             </article>
         </div>
-
-        <style>
-            .download-btn {
-                background: linear-gradient(135deg, #FF5733 0%, #FF4444 100%);
-                transition: all 0.3s ease;
-            }
-            
-            .download-btn:hover {
-                transform: translateY(-1px);
-                box-shadow: 0 4px 12px rgba(255, 87, 51, 0.3);
-            }
-
-            /* Add smooth scrolling for reference links */
-            html {
-                scroll-behavior: smooth;
-            }
-        </style>
 
         <div data-include="/components/footer.html"></div>
 
