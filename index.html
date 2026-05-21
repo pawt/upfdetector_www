@@ -15,9 +15,11 @@
     <meta name="apple-itunes-app" content="app-id=6738797472, app-argument=https://upfdetector.com">
     <link rel="canonical" href="https://upfdetector.com/" />
 
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://rsms.me" crossorigin>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <script src="/components/include.js"></script>
+    <script src="/components/include.js" defer></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4KF9E5Q4HB"></script>
@@ -145,11 +147,11 @@
                 
                 <!-- Right Column: App Screenshots (Improved for mobile) -->
                 <div class="flex justify-center lg:justify-end screenshot-container gap-2 sm:gap-4 mt-6 sm:mt-0">
-                    <img 
-                    src="/img/upf_detector_app_1.webp" 
-                    alt="UPF Detector app screenshot 1" 
+                    <img
+                    src="/img/upf_detector_app_1.webp"
+                    alt="UPF Detector app screenshot 1"
                     class="app-screenshot rounded-2xl sm:rounded-3xl shadow-xl sm:shadow-2xl object-cover max-w-[45%] sm:max-w-[240px]"
-                    loading="lazy"
+                    fetchpriority="high"
                     >
                     <img 
                     src="/img/upf_detector_app_2.webp" 
