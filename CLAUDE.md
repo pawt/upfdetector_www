@@ -8,7 +8,7 @@ Static website for **UPF Detector**, a freemium iOS app (App ID: `6738797472`) t
 - **TailwindCSS** via CDN (`https://cdn.tailwindcss.com`)
 - **Inter font** via `https://rsms.me/inter/inter.css`
 - **Component system** - navbar/footer loaded dynamically via `/components/include.js`
-- **Google Analytics** - `G-4KF9E5Q4HB`
+- **Analytics** - `/analytics.js` (one shared file, loaded by every page/post via `<script src="/analytics.js"></script>`) initializes both Google Analytics (`G-4KF9E5Q4HB`) and PostHog (separate "UPF Detector — Website" project, EU cloud). Never paste GA/PostHog init inline into a page again — add the one script tag instead, so a new page can't ship untracked.
 
 ## Project Structure
 ```
@@ -39,7 +39,7 @@ Static website for **UPF Detector**, a freemium iOS app (App ID: `6738797472`) t
 ## App Store Link
 Always use this exact URL for download CTAs:
 ```
-https://apps.apple.com/pl/app/upf-detector-food-scanner/id6738797472
+https://apps.apple.com/app/upf-detector-food-scanner/id6738797472
 ```
 
 ## Contact

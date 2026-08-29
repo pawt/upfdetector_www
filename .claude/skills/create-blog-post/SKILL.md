@@ -59,6 +59,7 @@ After creating a post, verify:
 - [ ] OG tags complete (title, description, type=article, url)
 - [ ] Article schema JSON-LD with correct dates
 - [ ] Apple Smart App Banner meta tag present
+- [ ] `<script src="/analytics.js"></script>` present right after `include.js` (already in the template — don't add a separate GA/PostHog snippet, don't remove this one)
 
 ### Content Quality
 - [ ] H1 includes primary keyword
@@ -90,7 +91,7 @@ When creating blog posts, use these CSS classes and components:
 
 Always use this exact URL:
 ```
-https://apps.apple.com/pl/app/upf-detector-food-scanner/id6738797472
+https://apps.apple.com/app/upf-detector-food-scanner/id6738797472
 ```
 
 ## Publication Date
