@@ -89,10 +89,11 @@ When creating blog posts, use these CSS classes and components:
 
 ## App Store URL
 
-Always use this exact URL:
+Always use this exact URL (blog's Apple campaign token — `ct=www_blog` — lets App Store Connect show installs attributed to the blog as a whole):
 ```
-https://apps.apple.com/app/upf-detector-food-scanner/id6738797472
+https://apps.apple.com/app/apple-store/id6738797472?pt=126822266&amp;ct=www_blog&amp;mt=8
 ```
+Already baked into `templates/blog-post-template.html` — don't swap it back to the untagged URL.
 
 ## Publication Date
 

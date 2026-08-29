@@ -36,11 +36,22 @@ Static website for **UPF Detector**, a freemium iOS app (App ID: `6738797472`) t
 - **Shadows**: `shadow-lg` on images and CTA buttons
 - **Download button**: gradient orange with hover lift effect (`translateY(-1px)`)
 
-## App Store Link
-Always use this exact URL for download CTAs:
-```
-https://apps.apple.com/app/upf-detector-food-scanner/id6738797472
-```
+## App Store Links
+Every download CTA carries an Apple campaign token (`ct=`) so App Store Connect → App Analytics → Acquisition can break out installs by surface. Use the one matching where the link lives — never the bare/untagged URL:
+
+- **Homepage** (`index.html`) CTAs:
+  ```
+  https://apps.apple.com/app/apple-store/id6738797472?pt=126822266&ct=www_home&mt=8
+  ```
+- **Blog posts** (all of `blog/*.html`, and the `create-blog-post` template so every future post inherits it):
+  ```
+  https://apps.apple.com/app/apple-store/id6738797472?pt=126822266&ct=www_blog&mt=8
+  ```
+  (`&amp;` in the HTML `href` attribute, plain `&` everywhere else.)
+
+The homepage's JSON-LD `downloadUrl` (structured data for crawlers, not a real click-through) intentionally stays on the plain untagged link: `https://apps.apple.com/app/upf-detector-food-scanner/id6738797472` — don't campaign-tag it, a bot reading schema markup isn't an attributable install.
+
+Need finer-grained tracking (e.g. per blog post instead of one shared `www_blog`)? Generate a new link in App Store Connect → App Analytics → Acquisition → "Generate a Campaign Link" (just type a campaign name, under 30 chars, it fills in the rest) and swap it into that page's `href`. Note: a campaign shows no data in App Store Connect until it has at least 5 installs from distinct Apple Accounts.
 
 ## Contact
 - Email: `hello@upfdetector.com`
