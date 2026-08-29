@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <script src="/components/include.js" defer></script>
 
-    <script src="/analytics.js"></script>
+    <script src="/analytics.js" defer></script>
 <style>
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -321,9 +321,6 @@
     <div data-include="/components/footer.html"></div>
 
     <script>
-        // Load components when the page loads
-        window.addEventListener('load', includeHTML);
-
         // Smooth scroll for navigation links
         function scrollToSection(e) {
             e.preventDefault();
@@ -338,10 +335,16 @@
             }
         }
 
-        // Add click listeners to all navigation links after components are loaded
-        window.addEventListener('load', () => {
-            document.querySelectorAll('nav a[href^="#"]').forEach(link => {
-                link.addEventListener('click', scrollToSection);
+        // Load components as soon as the DOM is ready — do NOT gate this on window.load,
+        // which waits for every third-party resource (Tailwind CDN, fonts, analytics) to
+        // settle. If any one of those is blocked (ad-blocker, corporate proxy), load never
+        // fires and the navbar/footer never appear. Attach nav click listeners only once
+        // includeHTML's fetch has actually finished, so the links exist in the DOM.
+        document.addEventListener('DOMContentLoaded', () => {
+            includeHTML().then(() => {
+                document.querySelectorAll('nav a[href^="#"]').forEach(link => {
+                    link.addEventListener('click', scrollToSection);
+                });
             });
         });
     </script>

@@ -1,7 +1,15 @@
 // Shared analytics for upfdetector.com — loaded by every page via <script src="/analytics.js"></script>.
 // One file so a new page/blog post only needs a single tag, and can't accidentally ship without tracking.
 
-// Google Analytics 4
+// Google Analytics 4 — load the real gtag.js library (was missing after the analytics
+// centralization: without this line, gtag() calls below just queued into dataLayer with
+// nothing ever reading it, so GA silently stopped tracking).
+(function () {
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-4KF9E5Q4HB';
+    document.head.appendChild(s);
+})();
 window.dataLayer = window.dataLayer || [];
 function gtag() { dataLayer.push(arguments); }
 gtag('js', new Date());

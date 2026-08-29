@@ -21,7 +21,7 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
         <script src="/components/include.js"></script>
-        <script src="/analytics.js"></script>
+        <script src="/analytics.js" defer></script>
 
         <!-- Article Schema for Google/LLM discoverability -->
         <script type="application/ld+json">
@@ -320,7 +320,7 @@
         <div data-include="/components/footer.html"></div>
 
         <script>
-            window.addEventListener('load', includeHTML);
+            document.addEventListener('DOMContentLoaded', includeHTML);
         </script>
     </body>
 </html>
