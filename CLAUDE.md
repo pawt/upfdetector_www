@@ -47,7 +47,13 @@ Every download CTA carries an Apple campaign token (`ct=`) so App Store Connect 
   ```
   https://apps.apple.com/app/apple-store/id6738797472?pt=126822266&ct=www_blog&mt=8
   ```
+- **Navbar** (`components/navbar.html`, desktop button + mobile menu button — appears on every page, so it gets its own token rather than borrowing `www_home`/`www_blog`):
+  ```
+  https://apps.apple.com/app/apple-store/id6738797472?pt=126822266&ct=www_nav&mt=8
+  ```
   (`&amp;` in the HTML `href` attribute, plain `&` everywhere else.)
+
+  The navbar button is styled with an inline `style` attribute rather than Tailwind utility classes or the page-level `.download-btn` rule. That's deliberate: the navbar is injected into every page by `include.js`, and `privacy.html`/`terms.html` don't define `.download-btn`. Keeping it self-contained means it renders correctly everywhere — don't "tidy" it into utility classes.
 
 The homepage's JSON-LD `downloadUrl` (structured data for crawlers, not a real click-through) intentionally stays on the plain untagged link: `https://apps.apple.com/app/upf-detector-food-scanner/id6738797472` — don't campaign-tag it, a bot reading schema markup isn't an attributable install.
 
