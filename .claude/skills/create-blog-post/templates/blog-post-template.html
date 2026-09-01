@@ -12,8 +12,13 @@
         <meta property="og:type" content="article" />
         <meta name="apple-itunes-app" content="app-id=6738797472, app-argument=https://upfdetector.com">
 
-        <meta property="og:url" content="https://upfdetector.com/blog/[slug]" />
-        <link rel="canonical" href="https://upfdetector.com/blog/[slug]" />
+        <meta property="og:url" content="https://upfdetector.com/blog/[slug].html" />
+        <!-- og:image is required, not optional: without it, every share of this post on
+             WhatsApp, Slack, LinkedIn or X renders as a bare text link. Absolute URL. -->
+        <meta property="og:image" content="https://upfdetector.com/img/[image-file]" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://upfdetector.com/img/[image-file]" />
+        <link rel="canonical" href="https://upfdetector.com/blog/[slug].html" />
 
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
@@ -40,7 +45,7 @@
             },
             "mainEntityOfPage": {
                 "@type": "WebPage",
-                "@id": "https://upfdetector.com/blog/[slug]"
+                "@id": "https://upfdetector.com/blog/[slug].html"
             },
             "about": {
                 "@type": "Thing",

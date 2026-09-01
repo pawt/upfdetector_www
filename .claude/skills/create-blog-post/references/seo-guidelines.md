@@ -3,10 +3,14 @@
 ## SEO for Google
 
 ### Title Tag
-- Include primary keyword
-- Keep under 60 characters
-- Append "- UPF Detector Blog"
-- Example: `Is Protein Powder Ultra-Processed? - UPF Detector Blog`
+- Include primary keyword, as close to the front as reads naturally
+- Keep under 60 characters — Google truncates past roughly that, and a cut-off title costs clicks
+- **Do not append "- UPF Detector Blog".** It burns ~20 of the 60 characters on branding nobody searches for, and Google often appends the site name itself anyway. Two posts shipped with that suffix, both truncated mid-phrase, and it was removed in `f598330`.
+- Spend the space on something a competing result (or an AI Overview answering the same question) can't offer: a number, a finding, a specific from the post
+- Example: `Is Bread Ultra-Processed? Most Loaves Are NOVA 4` (48 chars)
+- Example: `Is Nutella Ultra-Processed? 7 of 10 Breakfasts Are NOVA 4` (57 chars)
+
+Count the characters before committing — don't estimate.
 
 ### Meta Description
 - 150-160 characters
@@ -16,7 +20,7 @@
 - Example: `Learn if protein powder is ultra-processed, how to identify UPFs in supplements, and find healthier alternatives. Scan any food with UPF Detector app.`
 
 ### Heading Structure
-- **H1**: Match or closely mirror the title tag (without the "- UPF Detector Blog" suffix)
+- **H1**: Match or closely mirror the title tag. The H1 has no length limit, so it can carry a longer, fuller version of the same headline — the title tag is the one that must fit 60 characters.
 - **H2s**: Use for major sections, include secondary keywords naturally
 - **H3s**: Use for subsections within H2s
 

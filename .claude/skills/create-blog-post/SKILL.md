@@ -53,10 +53,11 @@ After creating a post, verify:
 
 ### HTML File
 - [ ] Created in `blog/` with descriptive slug
-- [ ] Title tag under 60 chars with primary keyword
+- [ ] Title tag under 60 chars with primary keyword — **counted, not estimated**, and with no "- UPF Detector Blog" suffix
 - [ ] Meta description 150-160 chars with primary keyword
-- [ ] Canonical URL matches filename
-- [ ] OG tags complete (title, description, type=article, url)
+- [ ] Canonical, `og:url`, JSON-LD `@id`, sitemap `<loc>` and all internal links to this post use the identical `.html` URL (see "URL Form" above)
+- [ ] OG tags complete (title, description, type=article, url, **image**)
+- [ ] `og:image` and `twitter:image` set to an absolute URL of a real file in `/img/` — verify it exists, and that it is landscape (roughly 1.91:1 or 16:9). Portrait phone screenshots crop badly as share cards.
 - [ ] Article schema JSON-LD with correct dates
 - [ ] Apple Smart App Banner meta tag present
 - [ ] `<script src="/analytics.js"></script>` present right after `include.js` (already in the template — don't add a separate GA/PostHog snippet, don't remove this one)
@@ -97,4 +98,28 @@ Already baked into `templates/blog-post-template.html` — don't swap it back to
 
 ## Publication Date
 
-Use today's date: **February 19, 2026** (format as `2026-02-19` in ISO format, `February 19, 2026` in human-readable format)
+Use **the actual current date** — read it from your environment context, don't copy a date out of this file or off an existing post. This section used to hardcode "February 19, 2026", which meant every post written months later shipped backdated.
+
+Write it in both formats, and make sure all four places agree:
+- `datePublished` and `dateModified` in the Article JSON-LD — `2026-09-01`
+- the `<time datetime="...">` attribute — `2026-09-01`
+- the visible date next to it — `September 1, 2026`
+- the `<lastmod>` for this post's new `sitemap.xml` entry — `2026-09-01`
+
+## URL Form: Pick One and Use It Everywhere
+
+The file is `blog/[slug].html`, but GitHub Pages serves it at both `/blog/[slug]` and `/blog/[slug].html`. Google will index whichever you point it at — and if your signals disagree, it indexes **both** and splits the post's ranking between two URLs. That happened to the NOVA post (2,902 impressions on one URL, 390 on the other) and was fixed in `3bf8124`.
+
+**Use the `.html` form for new posts.** It matches the filename and the site's best-performing posts. Whatever you pick, these five must be byte-identical:
+
+1. `<link rel="canonical">`
+2. `<meta property="og:url">`
+3. JSON-LD `mainEntityOfPage.@id`
+4. the `<loc>` in `sitemap.xml`
+5. every internal link pointing at the post
+
+When linking **to** other posts, match that post's own canonical — they are not all the same form. Check before linking:
+
+```bash
+grep -o 'rel="canonical" href="[^"]*"' blog/[target].html
+```
