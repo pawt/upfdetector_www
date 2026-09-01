@@ -3,6 +3,10 @@
 ## Project Overview
 Static website for **UPF Detector**, a freemium iOS app (App ID: `6738797472`) that scans food barcodes to identify ultra-processed foods using the NOVA classification system. Hosted on GitHub Pages at `upfdetector.com`.
 
+## Start Here
+- **`HANDOVER.md`** — SEO and content state: the Search Console baseline to measure against, what the next blog post should be, and the URL/title conventions that have already caused bugs. Read it before touching page metadata or writing a post.
+- **`NEXT_STEPS.md`** — analytics and product backlog from the PostHog review (app-side and tracking work).
+
 ## Tech Stack
 - **Pure HTML** - no build tools, no static site generator
 - **TailwindCSS** via CDN (`https://cdn.tailwindcss.com`)
