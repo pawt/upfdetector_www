@@ -1,16 +1,47 @@
-# Handover — SEO & Content, session of Sep 1, 2026
+# Handover — SEO & Content, updated Sep 8, 2026
 
-Continuation notes from the Search Console review and content work of
-2026-09-01. Companion to `NEXT_STEPS.md` (analytics/product backlog from the
-Aug 29 PostHog review) — that file covers the app and tracking, this one
-covers search, the blog, and the website's own pages.
+Continuation notes from the Search Console review of 2026-09-01 and the
+content work of 2026-09-08. Companion to `NEXT_STEPS.md` (analytics/product
+backlog from the Aug 29 PostHog review) — that file covers the app and
+tracking, this one covers search, the blog, and the website's own pages.
 
 Read `CLAUDE.md` first for conventions (campaign tokens, design system,
 structure).
 
 ---
 
-## What shipped last session
+## What shipped Sep 8
+
+**New post — [*Is Oat Milk Ultra-Processed?*](https://upfdetector.com/blog/is-oat-milk-ultra-processed.html)**,
+~2,700 words, live on `main`. This was item 1 of the priority list below and
+is now done.
+
+| PR | What |
+|---|---|
+| [#1](https://github.com/pawt/upfdetector_www/pull/1) | The post, plus blog index card, sitemap entry, and the healthy-foods oat milk FAQ shortened and linked to it (hub and spoke) |
+| [#2](https://github.com/pawt/upfdetector_www/pull/2) | Hero and in-article images wired in; hero `width`/`height` corrected to the file's real 1520×800 |
+
+Notes for whoever measures this later:
+
+- Title `Is Oat Milk Ultra-Processed? It Depends on 3 Ingredients` — 56 chars,
+  counted. Meta description 156.
+- Format is deliberately a copy of the bread post: direct answer, NOVA
+  reasoning, ingredient comparison, additive breakdown, FAQ, reference table,
+  7 citations. It is the third single-subject *"Is X ultra-processed?"* post.
+- Two internal links in, from the healthy-foods post (FAQ + the oat milk
+  section). Three internal links out.
+- The images came from Midjourney and were placed by reading the files, not
+  the prompts — the second render showed a jug of *finished* oat milk and a
+  folded cloth, not straining in progress, and its alt text says so.
+- A third image slot (an ingredient-list comparison) was cut rather than
+  shipped broken. The green/red ingredient cards carry that section.
+
+**Still to do on the owner's side:** re-scrape the post in Facebook's Sharing
+Debugger so the card is primed before it gets shared anywhere.
+
+---
+
+## What shipped Sep 1
 
 Nine commits, `3bf8124..3d6eff3`, all on `main` and pushed.
 
@@ -67,30 +98,16 @@ were already on page one, so if the retitles worked it shows there first.
 
 Do **not** change those two pages again before reading the numbers.
 
+As of Sep 8 the owner expects to have these around **Sep 22** — that is the
+3–4 week mark after the Sep 1 retitles, which is the earliest the numbers mean
+anything. The oat milk post is too new to read at that point; give it its own
+4 weeks (early-mid October) before judging it.
+
 ---
 
 ## Next piece of work, in priority order
 
-### 1. New post: "Is Oat Milk Ultra-Processed?"
-
-Use the `/create-blog-post` skill.
-
-Single-subject *"Is X ultra-processed?"* is the **only** format that has
-reached page one here (Nutella 4.8, bread 8.7). Broad explainers stall at
-18–48. Personal narrative gets nothing. Replicate the winner.
-
-The answer is genuinely "it depends on the ingredient list" — oats, water and
-salt is not ultra-processed; add gellan gum, dipotassium phosphate and
-rapeseed oil and it is. That ambiguity is an asset: the reader has to keep
-reading to get their answer.
-
-Link it from the existing oat milk FAQ in the healthy-foods post (keep that
-answer short and point to the full article — hub and spoke, not duplication).
-
-Runners-up if oat milk is already covered: **peanut butter** (high volume,
-clean two-ingredients-vs-twelve story), **Greek yogurt**.
-
-### 2. Fix the cannibalisation between the two explainers
+### 1. Fix the cannibalisation between the two explainers
 
 `what-are-ultra-processed-foods-nova-classification` (pos 18.5) and
 `how-to-identify-ultra-processed-foods` (pos 47.8) are the same article twice:
@@ -105,11 +122,36 @@ sharply.
 Its title also still reads **"(NOVA Guide 2025)"** — stale year in the one
 line searchers actually see.
 
+Note that both of these are extensionless-canonical posts, and the oat milk
+post links out to the NOVA one. If you merge or redirect, fix the inbound
+links in `is-oat-milk-ultra-processed.html` and
+`healthy-foods-that-are-ultra-processed.html` in the same change.
+
+### 2. Next post: peanut butter, then Greek yogurt
+
+The single-subject *"Is X ultra-processed?"* format is the only one that has
+reached page one here (Nutella 4.8, bread 8.7, oat milk TBD). Broad explainers
+stall at 18–48. Personal narrative gets nothing. Keep replicating the winner.
+
+**Peanut butter** is the strongest remaining candidate: high volume, and the
+same clean ambiguity that made oat milk work — peanuts and salt is NOVA 1,
+while the mainstream jars add hydrogenated oil, sugar and emulsifiers. Then
+**Greek yogurt** (real strained yogurt vs. the thickened, sweetened tubs).
+
+Unlike oat milk, neither has an existing home in the healthy-foods post —
+that post's twelve items include low-fat yogurts but not Greek yogurt, and
+peanut butter not at all. So there is no FAQ to shorten and point at; build
+the inbound links by hand instead (the bread and Nutella posts both have
+natural places to mention a peanut butter article).
+
 ### 3. Optional — blog `og:image` format
 
-The six blog `og:image` files are `.webp`. Facebook renders these fine
+Six blog `og:image` files are `.webp`. Facebook renders these fine
 (verified 2026-09-01). **Test LinkedIn's Post Inspector first**; only convert
 to `.jpg` if cards are actually broken there. Don't do the work on suspicion.
+
+The oat milk post (Sep 8) uses `.jpg`, so if you do test LinkedIn you have a
+`.jpg` and a `.webp` post to compare directly.
 
 ### 4. Optional — explicit `og:image:alt`
 
@@ -136,16 +178,27 @@ homepage does not. Explicit beats inferred, but this is low priority.
   by `include.js` into every page, and `privacy.html` / `terms.html` don't
   define `.download-btn`. Don't refactor it into Tailwind utility classes.
 - **Images.** The remote sandbox cannot reach the live site (egress policy)
-  and cannot receive pasted images. Files must arrive via `git push`.
-- **Verify, don't assume.** Both image conversions and the title lengths this
-  session were decided by measuring, not estimating. Alt text written from
-  filenames was wrong twice — open the image before describing it.
+  and cannot receive pasted images. Files must arrive via `git push`. Once
+  they do, read the dimensions off the file rather than trusting the prompt —
+  the Sep 8 hero came back 1520×800, not the 1200×630 it was asked for.
+- **Never ship an `<img>` pointing at a file that isn't in the repo yet.**
+  Write the post around the images you have. A third image was planned for the
+  oat milk post and cut when it didn't get generated; had it stayed, the post
+  would have gone live with a broken image.
+- **Verify, don't assume.** Image conversions and title lengths are decided by
+  measuring, not estimating. Alt text written from filenames was wrong twice,
+  and on Sep 8 alt text written from the *Midjourney prompt* would have been
+  wrong a third time — the render showed finished oat milk and a folded cloth,
+  not the straining the prompt described. Open the image before describing it.
 
 ---
 
 ## Pending on the owner's side
 
+- [ ] Re-scrape the oat milk post in **Facebook's Sharing Debugger** — it was
+      published Sep 8 with the `og:image` in place, but if anything crawled it
+      before the images landed, the card is cached wrong
 - [ ] `www_nav` campaign shows no data in App Store Connect until **5+ installs
       from distinct Apple Accounts**
-- [ ] The CTR changes need **3–4 weeks** before the numbers mean anything
+- [ ] GSC numbers for the Sep 1 retitles — due around **Sep 22** (3–4 weeks)
 - [ ] LinkedIn Post Inspector check (gates item 3 above)
