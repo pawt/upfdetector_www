@@ -12,6 +12,14 @@ site conventions before editing pages.
 - **Is Oat Milk Ultra-Processed?** shipped on September 8 and is linked from
   the healthy-foods article, blog index, and sitemap.
 - The live oat-milk page uses both added photos successfully.
+- **Is Peanut Butter Ultra-Processed? Read the Label** added September 10 at
+  `blog/is-peanut-butter-ultra-processed.html`, with seven manufacturer-checked
+  UK, US and Australian examples. It is linked from the blog index,
+  healthy-foods and weight-gain posts, and included in the sitemap.
+- Peanut-butter photography awaits selection. The post works without a hero
+  and currently uses the existing site photograph for social sharing. Eight
+  Midjourney options and image-integration notes are in
+  `docs/peanut-butter-midjourney-prompts.md`.
 - The title changes are only nine days old. Do not draw conclusions from GSC
   yet and do not retitle the Nutella or bread posts again before measuring.
 
@@ -47,9 +55,16 @@ the September 8 oat-milk article separately in early October.
 
 ### 3. Choose the next single-food article
 
-Continue the winning “Is X ultra-processed?” format. **Peanut butter** is the
-leading candidate, followed by **Greek yogurt**. Neither has an existing home
-in the healthy-foods article, so add natural inbound links from related posts.
+Continue the winning “Is X ultra-processed?” format. Peanut butter is now
+covered; **Greek yogurt** is the next candidate. Link it naturally from the
+healthy-foods article's yogurt discussion and other related posts.
+
+Peanut-butter ingredient checks are dated September 10. Preserve the exact
+market and variant when updating: Jif Creamy and Jif Natural have different
+recipes, and Bega Light is a peanut spread with different ingredients from
+Bega Original. The classifications are our ingredient-based assessments,
+not manufacturer ratings or reported app scans. Measure this post separately
+in October.
 
 ### Optional checks
 
