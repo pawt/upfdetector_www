@@ -18,7 +18,10 @@ site conventions before editing pages.
   healthy-foods and weight-gain posts, and included in the sitemap.
 - The selected peanut-butter hero is `img/peanut-butter-ultra-processed.jpg`
   (1456 × 816). It appears below the article header and is used in social
-  metadata and Article schema. Supporting images remain optional. Eight
+  metadata and Article schema. Three supporting photos are installed beside
+  the stirring discussion, shopping checklist and smooth-versus-crunchy FAQ:
+  `peanut-butter-stirring.jpg`, `peanut-butter-reading-label.jpg` and
+  `peanut-butter-smooth-vs-crunchy.jpg`, all in `img/`. Eight
   Midjourney options and image-integration notes are in
   `docs/peanut-butter-midjourney-prompts.md`.
 - The title changes are only nine days old. Do not draw conclusions from GSC
