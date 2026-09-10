@@ -2,6 +2,8 @@
 
 For `blog/is-peanut-butter-ultra-processed.html`.
 
+**Selected September 10, 2026:** the user supplied the overhead photograph now saved as `img/peanut-butter-ultra-processed.jpg` (1456 × 816). It is installed as the article hero and social-sharing image. The prompts below remain available for supporting images or future alternatives.
+
 Generate several variations of the directions below, then choose one hero and one or two supporting images. My first choice is **hero 1 + supporting image 5**: a warm, recognisable food photograph followed by a close look at the texture. Hero 4 is the illustration alternative.
 
 Keep the palette consistent: peanut brown, warm cream, oatmeal linen and a small burnt-orange accent. Use unbranded jars. The article's real product comparisons are based on manufacturer ingredients; generated packaging must not be presented as photographic evidence of those products. Any readable ingredient labels or explanatory text should be added accurately afterward, outside Midjourney.
@@ -77,5 +79,5 @@ Possible caption: “Smooth or crunchy describes texture, not the NOVA group.”
 - Prefer natural-looking peanut texture, glass edges and utensils. Check hands carefully if using option 7.
 - Keep the hero readable when cropped to 1200 × 630 for social sharing. A 1600-pixel-wide source is enough for the article's content width.
 - Export the hero as `img/peanut-butter-ultra-processed.jpg`; export supporting images with descriptive names once selected.
-- The current article deliberately has no missing-image placeholders. It uses the existing site photograph only for social metadata. When the hero is selected, insert it below the article header and update both social-image URLs and alt descriptions. Add its real dimensions and the Article schema image at the same time.
+- The selected hero is installed below the article header, with matching social-image URLs, alt descriptions, dimensions and Article schema image. If replacing it later, keep those references aligned. Supporting images can be added at the suggested positions once selected.
 - Write alt text from the selected output, not from these prompts. Don't use generated jars as pictures of Meridian, Whole Earth, Smucker's, Jif, Mayver's or Bega.

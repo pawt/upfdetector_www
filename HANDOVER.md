@@ -16,8 +16,9 @@ site conventions before editing pages.
   `blog/is-peanut-butter-ultra-processed.html`, with seven manufacturer-checked
   UK, US and Australian examples. It is linked from the blog index,
   healthy-foods and weight-gain posts, and included in the sitemap.
-- Peanut-butter photography awaits selection. The post works without a hero
-  and currently uses the existing site photograph for social sharing. Eight
+- The selected peanut-butter hero is `img/peanut-butter-ultra-processed.jpg`
+  (1456 × 816). It appears below the article header and is used in social
+  metadata and Article schema. Supporting images remain optional. Eight
   Midjourney options and image-integration notes are in
   `docs/peanut-butter-midjourney-prompts.md`.
 - The title changes are only nine days old. Do not draw conclusions from GSC
