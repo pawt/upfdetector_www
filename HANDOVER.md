@@ -21,12 +21,13 @@ site conventions before editing pages.
   metadata and Article schema. Three supporting photos are installed beside
   the stirring discussion, shopping checklist and smooth-versus-crunchy FAQ:
   `peanut-butter-stirring.jpg`, `peanut-butter-reading-label.jpg` and
-  `peanut-butter-smooth-vs-crunchy.jpg`, all in `img/`. Eight
-  Midjourney options and image-integration notes are in
-  `docs/peanut-butter-midjourney-prompts.md`.
-- **Is Greek Yogurt Ultra-Processed? Check the Label** added September 22 at
-  `blog/is-greek-yogurt-ultra-processed.html`, with six manufacturer-checked
-  UK, US and Australian examples. It is linked from the blog index,
+  `peanut-butter-smooth-vs-crunchy.jpg`, all in `img/`.
+- **Is Greek Yogurt Ultra-Processed? FAGE, Oikos & Chobani** added September 22
+  at `blog/is-greek-yogurt-ultra-processed.html`, with six manufacturer-checked
+  UK, US and Australian examples and an at-a-glance summary table under the
+  quick answer. It was briefly titled “…? Check the Label”; the brand names
+  were added the same day so it doesn't read as a copy of the peanut-butter
+  title and so it matches brand queries. It is linked from the blog index,
   healthy-foods, Nutella/breakfast and weight-gain posts, and is included in
   the sitemap. The selected hero is
   `img/greek-yogurt-ultra-processed.jpg` (1456 × 816); it appears below the
@@ -35,11 +36,14 @@ site conventions before editing pages.
   plain-versus-flavored section, and
   `img/greek-yogurt-milk-cultures-illustration.jpg` (1232 × 928) appears after
   the NOVA explanation. The label-reading and straining images have not been
-  supplied yet. Midjourney options and exact integration notes are in
-  `docs/greek-yogurt-midjourney-prompts.md`.
+  supplied yet.
+- Image-generation prompts are not kept in the repo: anything under the site
+  root is published by GitHub Pages.
 - The September 1 title changes are now three weeks old. The first GSC
   comparison can be recorded now, although September 29 gives a cleaner
   four-week window. Do not retitle the Nutella or bread posts before measuring.
+  Note: the Nutella post body gained one Greek-yogurt link on September 22
+  (title unchanged); keep that in mind when reading its numbers.
 
 ## Next steps
 
