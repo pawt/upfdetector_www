@@ -1,4 +1,4 @@
-# Handover — SEO & Content (updated September 10, 2026)
+# Handover — SEO & Content (updated September 22, 2026)
 
 This file covers search, blog content, and the public website. `NEXT_STEPS.md`
 contains the separate analytics and iOS product backlog. Read `CLAUDE.md` for
@@ -24,8 +24,22 @@ site conventions before editing pages.
   `peanut-butter-smooth-vs-crunchy.jpg`, all in `img/`. Eight
   Midjourney options and image-integration notes are in
   `docs/peanut-butter-midjourney-prompts.md`.
-- The title changes are only nine days old. Do not draw conclusions from GSC
-  yet and do not retitle the Nutella or bread posts again before measuring.
+- **Is Greek Yogurt Ultra-Processed? Check the Label** added September 22 at
+  `blog/is-greek-yogurt-ultra-processed.html`, with six manufacturer-checked
+  UK, US and Australian examples. It is linked from the blog index,
+  healthy-foods, Nutella/breakfast and weight-gain posts, and is included in
+  the sitemap. The selected hero is
+  `img/greek-yogurt-ultra-processed.jpg` (1456 × 816); it appears below the
+  article header and is used in social metadata and Article schema. Supporting
+  image `img/greek-yogurt-plain-vs-flavored.jpg` (1344 × 896) appears in the
+  plain-versus-flavored section, and
+  `img/greek-yogurt-milk-cultures-illustration.jpg` (1232 × 928) appears after
+  the NOVA explanation. The label-reading and straining images have not been
+  supplied yet. Midjourney options and exact integration notes are in
+  `docs/greek-yogurt-midjourney-prompts.md`.
+- The September 1 title changes are now three weeks old. The first GSC
+  comparison can be recorded now, although September 29 gives a cleaner
+  four-week window. Do not retitle the Nutella or bread posts before measuring.
 
 ## Next steps
 
@@ -60,8 +74,8 @@ the September 8 oat-milk article separately in early October.
 ### 3. Choose the next single-food article
 
 Continue the winning “Is X ultra-processed?” format. Peanut butter is now
-covered; **Greek yogurt** is the next candidate. Link it naturally from the
-healthy-foods article's yogurt discussion and other related posts.
+covered, and **Greek yogurt** was added September 22. Choose the next candidate
+from GSC query demand before drafting another single-food article.
 
 Peanut-butter ingredient checks are dated September 10. Preserve the exact
 market and variant when updating: Jif Creamy and Jif Natural have different
