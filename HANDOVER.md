@@ -6,44 +6,64 @@ site conventions before editing pages.
 
 ## Current state
 
-- The September 1 SEO pass shipped: canonical cleanup, new titles and meta
+### All blog posts (10)
+
+Newest first. "Canonical" is the exact form to use in `og:url`, JSON-LD `@id`,
+the sitemap and inbound links — two older posts are extensionless.
+
+| Published | Post | File (`blog/`) | Canonical | Notes |
+|---|---|---|---|---|
+| 2026-09-22 | Is Greek Yogurt Ultra-Processed? FAGE, Oikos & Chobani | `is-greek-yogurt-ultra-processed.html` | `.html` | 6 products (UK/US/AU), checked Sept 22. Measure in October. |
+| 2026-09-10 | Is Peanut Butter Ultra-Processed? Read the Label | `is-peanut-butter-ultra-processed.html` | `.html` | 7 products (UK/US/AU), checked Sept 10. Measure in October. |
+| 2026-09-08 | Is Oat Milk Ultra-Processed? It Depends on 3 Ingredients | `is-oat-milk-ultra-processed.html` | `.html` | Measure in early October. |
+| 2026-09-01 | 12 "Healthy" Foods That Are Actually Ultra-Processed | `healthy-foods-that-are-ultra-processed.html` | `.html` | Hub post; links to every single-food article. |
+| 2026-05-19 | Is Bread Ultra-Processed? Most Loaves Are NOVA 4 | `is-bread-ultra-processed.html` | `.html` | Retitled Sept 1 — **frozen until the GSC comparison is recorded**. |
+| 2026-04-08 | Do Ultra-Processed Foods Make You Gain Weight? - UPF Detector Blog | `ultra-processed-foods-and-weight-gain.html` | `.html` | Title still has the banned `- UPF Detector Blog` suffix. |
+| 2026-03-04 | Is Nutella Ultra-Processed? 7 of 10 Breakfasts Are NOVA 4 | `is-nutella-ultra-processed-breakfast-foods-scanned.html` | `.html` | Retitled Sept 1 — **frozen**. Body gained one Greek-yogurt link Sept 22 (title unchanged). |
+| 2026-02-19 | What Are Ultra-Processed Foods? The NOVA System Explained | `what-are-ultra-processed-foods-nova-classification.html` | extensionless | New hero + label image Sept 12. Overlaps with how-to-identify (next step 1). |
+| 2025-04-09 | How to Identify Ultra-Processed Foods (NOVA Guide 2025) | `how-to-identify-ultra-processed-foods.html` | extensionless | Stale "2025" title; overlaps with the NOVA explainer (next step 1). |
+| 2025-03-11 | Why I Created Ultra-Processed Food Scanner App for iOS - UPF Detector Blog | `why-ive-created-upf-detector.html` | extensionless | Founder story. Title has the banned suffix. |
+
+All ten are in `sitemap.xml` and `blog/index.html`.
+
+### What shipped recently
+
+- **September 1 SEO pass:** canonical cleanup, new titles and meta
   descriptions for the Nutella and bread posts, homepage app-intent SEO,
   structured data, social cards, and the navbar download CTA.
-- **Is Oat Milk Ultra-Processed?** shipped on September 8 and is linked from
-  the healthy-foods article, blog index, and sitemap.
-- The live oat-milk page uses both added photos successfully.
-- **Is Peanut Butter Ultra-Processed? Read the Label** added September 10 at
-  `blog/is-peanut-butter-ultra-processed.html`, with seven manufacturer-checked
-  UK, US and Australian examples. It is linked from the blog index,
-  healthy-foods and weight-gain posts, and included in the sitemap.
-- The selected peanut-butter hero is `img/peanut-butter-ultra-processed.jpg`
-  (1456 × 816). It appears below the article header and is used in social
-  metadata and Article schema. Three supporting photos are installed beside
-  the stirring discussion, shopping checklist and smooth-versus-crunchy FAQ:
-  `peanut-butter-stirring.jpg`, `peanut-butter-reading-label.jpg` and
-  `peanut-butter-smooth-vs-crunchy.jpg`, all in `img/`.
-- **Is Greek Yogurt Ultra-Processed? FAGE, Oikos & Chobani** added September 22
-  at `blog/is-greek-yogurt-ultra-processed.html`, with six manufacturer-checked
-  UK, US and Australian examples and an at-a-glance summary table under the
-  quick answer. It was briefly titled “…? Check the Label”; the brand names
-  were added the same day so it doesn't read as a copy of the peanut-butter
-  title and so it matches brand queries. It is linked from the blog index,
-  healthy-foods, Nutella/breakfast and weight-gain posts, and is included in
-  the sitemap. The selected hero is
-  `img/greek-yogurt-ultra-processed.jpg` (1456 × 816); it appears below the
-  article header and is used in social metadata and Article schema. Supporting
-  image `img/greek-yogurt-plain-vs-flavored.jpg` (1344 × 896) appears in the
-  plain-versus-flavored section, and
-  `img/greek-yogurt-milk-cultures-illustration.jpg` (1232 × 928) appears after
-  the NOVA explanation. The label-reading and straining images have not been
-  supplied yet.
-- Image-generation prompts are not kept in the repo: anything under the site
-  root is published by GitHub Pages.
-- The September 1 title changes are now three weeks old. The first GSC
-  comparison can be recorded now, although September 29 gives a cleaner
-  four-week window. Do not retitle the Nutella or bread posts before measuring.
-  Note: the Nutella post body gained one Greek-yogurt link on September 22
-  (title unchanged); keep that in mind when reading its numbers.
+- **September 8 — oat milk.** Linked from healthy-foods; both added photos
+  render on the live page.
+- **September 10 — peanut butter.** Hero `img/peanut-butter-ultra-processed.jpg`
+  (1456 × 816) plus `peanut-butter-stirring.jpg`,
+  `peanut-butter-reading-label.jpg` and `peanut-butter-smooth-vs-crunchy.jpg`.
+  Linked from healthy-foods and weight-gain.
+- **September 12 — NOVA explainer imagery:** hero
+  `img/what-are-ultra-processed-foods-nova-hero.webp` (also the social image,
+  with `og:image:alt`) and `img/tricky-cases-reading-food-label.webp`. Title
+  unchanged.
+- **September 22 — Greek yogurt.** Hero `img/greek-yogurt-ultra-processed.jpg`
+  (1456 × 816), `greek-yogurt-plain-vs-flavored.jpg` (1344 × 896) and
+  `greek-yogurt-milk-cultures-illustration.jpg` (1232 × 928). Has an
+  at-a-glance table of the six products under the quick answer and a brand
+  FAQ. Linked from healthy-foods, Nutella/breakfast and weight-gain. It was
+  first published as "…? Check the Label" and retitled the same day
+  ([PR #4](https://github.com/pawt/upfdetector_www/pull/4)) so it doesn't
+  echo the peanut-butter title and matches brand searches. Label-reading and
+  straining images were planned but not supplied.
+- Image-generation prompts are no longer kept in the repo: anything under the
+  site root is published by GitHub Pages. The `docs/` prompt files were
+  removed in PR #4.
+
+### Open fact-checks
+
+- **Greek yogurt:** confirm Oikos Triple Zero Vanilla (US) no longer lists
+  chicory root fiber, and that "milk solids" on Farmers Union High Protein
+  Strawberry (AU) includes added milk protein, as the post suggests.
+- **Peanut butter:** preserve the exact market and variant when updating.
+  Jif Creamy and Jif Natural have different recipes, and Bega Light is a
+  peanut spread with different ingredients from Bega Original.
+- The classifications in all single-food posts are our ingredient-based
+  assessments, not manufacturer ratings or reported app scans.
 
 ## Next steps
 
@@ -61,8 +81,10 @@ intent. In either case, remove **“NOVA Guide 2025”** from the weaker page's
 title; it is stale.
 
 Both posts use extensionless canonical URLs. If they are merged, update the
-inbound links in `is-oat-milk-ultra-processed.html` and
-`healthy-foods-that-are-ultra-processed.html` in the same change.
+inbound links in the same change. As of September 22 these posts link to one
+or both: healthy-foods, Greek yogurt, Nutella/breakfast, oat milk, peanut
+butter, weight gain and why-I-created (`grep -l` for the two paths in
+`blog/` to recheck).
 
 ### 2. Measure the September 1 title changes
 
@@ -77,23 +99,29 @@ the September 8 oat-milk article separately in early October.
 
 ### 3. Choose the next single-food article
 
-Continue the winning “Is X ultra-processed?” format. Peanut butter is now
-covered, and **Greek yogurt** was added September 22. Choose the next candidate
-from GSC query demand before drafting another single-food article.
+Continue the winning “Is X ultra-processed?” format. Oat milk, peanut butter
+and Greek yogurt are now covered. Choose the next candidate from GSC query
+demand rather than drafting blind. Follow the Greek yogurt post's pattern:
+named products from the UK, US and Australia, a dated ingredient check, a
+summary table near the top, and a title that doesn't reuse an earlier post's
+second half ("Read the Label", "Check the Label"). Link the new post from the
+healthy-foods hub and any post that already mentions the food.
 
-Peanut-butter ingredient checks are dated September 10. Preserve the exact
-market and variant when updating: Jif Creamy and Jif Natural have different
-recipes, and Bega Light is a peanut spread with different ingredients from
-Bega Original. The classifications are our ingredient-based assessments,
-not manufacturer ratings or reported app scans. Measure this post separately
-in October.
+### 4. Remove the banned title suffix
+
+`ultra-processed-foods-and-weight-gain.html` and
+`why-ive-created-upf-detector.html` still end in `- UPF Detector Blog`. Drop
+the suffix (title, `og:title`, `twitter:title`, and JSON-LD `headline` if it
+repeats it). Neither page is part of the frozen Nutella/bread comparison.
 
 ### Optional checks
 
 - Re-scrape the oat-milk article in Facebook's Sharing Debugger.
 - Test a `.webp` blog social image and the oat-milk `.jpg` with LinkedIn Post
   Inspector. Convert the `.webp` images only if LinkedIn fails to render them.
-- Add explicit `og:image:alt` values. This is useful but low priority.
+- Add explicit `og:image:alt` values. Done for Greek yogurt, peanut butter
+  and the NOVA explainer; the other seven posts still lack it. Useful but low
+  priority.
 
 ## GSC baseline — September 1, before the title changes
 
@@ -138,5 +166,8 @@ The `free`-prefixed queries converted at 15–37% CTR, versus 0.67% for
 
 - App Store Connect does not show a campaign until it has at least five
   installs from distinct Apple Accounts.
-- The September 1 CTR/title comparison should wait until September 22–29.
+- The September 1 CTR/title comparison is due now, ideally recorded around
+  September 29.
+- October: first separate measurements for oat milk, peanut butter and Greek
+  yogurt.
 - The LinkedIn Post Inspector check gates any social-image conversion work.
