@@ -1,4 +1,4 @@
-# Handover — SEO & Content (updated October 10, 2026)
+# Handover — SEO & Content (updated October 11, 2026)
 
 This file covers search, blog content, and the public website. `NEXT_STEPS.md`
 contains the separate analytics and iOS product backlog. Read `CLAUDE.md` for
@@ -13,7 +13,7 @@ the sitemap and inbound links — two older posts are extensionless.
 
 | Published | Post | File (`blog/`) | Canonical | Notes |
 |---|---|---|---|---|
-| 2026-10-10 | Are Protein Bars Ultra-Processed? Quest, RXBAR & Grenade | `are-protein-bars-ultra-processed.html` | `.html` | 7 bars (UK/US/AU), checked Oct 10. **Labels need a direct-page check and the post needs a hero image** (see open fact-checks). Measure in November. |
+| 2026-10-11 | Are Protein Bars Ultra-Processed? Quest, RXBAR & Grenade | `are-protein-bars-ultra-processed.html` | `.html` | 7 bars (UK/US/AU), cross-checked Oct 11 (see open fact-checks). **Needs a hero image.** Measure in November. |
 | 2026-09-22 | Is Greek Yogurt Ultra-Processed? FAGE, Oikos & Chobani | `is-greek-yogurt-ultra-processed.html` | `.html` | 6 products (UK/US/AU), checked Sept 22. Measure in October. |
 | 2026-09-10 | Is Peanut Butter Ultra-Processed? Read the Label | `is-peanut-butter-ultra-processed.html` | `.html` | 7 products (UK/US/AU), checked Sept 10. Measure in October. |
 | 2026-09-08 | Is Oat Milk Ultra-Processed? It Depends on 3 Ingredients | `is-oat-milk-ultra-processed.html` | `.html` | Measure in early October. |
@@ -51,7 +51,7 @@ All eleven are in `sitemap.xml` and `blog/index.html`.
   ([PR #4](https://github.com/pawt/upfdetector_www/pull/4)) so it doesn't
   echo the peanut-butter title and matches brand searches. Label-reading and
   straining images were planned but not supplied.
-- **October 10 — protein bars.** Picked from app scan data: in PostHog
+- **October 11 — protein bars.** Picked from app scan data: in PostHog
   `product_scan_succeeded` events over the 90 days to Oct 10, bars were the
   most-scanned category without its own post (43 users, second only to bread
   at 49). Seven bars: Quest Chocolate Chip Cookie Dough, RXBAR Chocolate Sea
@@ -67,16 +67,18 @@ All eleven are in `sitemap.xml` and `blog/index.html`.
 
 ### Open fact-checks
 
-- **Protein bars — verify all seven labels before promoting the post.** The
-  session that wrote it could not open manufacturer or retailer sites (the
-  cloud environment's network policy blocked them), so the ingredient lists
-  were taken from search-engine summaries of those pages and condensed. Open
-  each linked product page and check the list, especially: whether Quest
-  Chocolate Chip Cookie Dough lists natural flavors (omitted in the post);
-  the full Grenade Carb Killa list (the Tesco page is linked); that the
-  Musashi Peanut Butter list on `musashi.com` (AU) matches the post rather
-  than the US formula; and Carman's current protein blend (older listings
-  show a "soy protein blend" instead of soy protein isolate).
+- **Protein bars — cross-checked, not read off the manufacturer pages.**
+  The cloud environment's network policy blocked every product site, so each
+  label was confirmed through web search against the manufacturer page plus
+  at least one retailer listing (Oct 11). Points where sources disagree are
+  worded to cover both, but a direct look is still worthwhile:
+  Quest Chocolate Chip Cookie Dough lists either soluble corn fiber or
+  polydextrose depending on the listing; Grenade's collagen ingredient shows
+  as gelatine hydrolysate in most listings and bovine collagen hydrolysate in
+  one; Musashi's coating is sweetened with erythritol and steviol glycosides
+  in some listings and maltitol in others; Carman's 40g bar (linked) differs
+  from the older 200g-pack recipe, which used a "soy protein blend".
+  None of these changes a NOVA assessment.
 - **Greek yogurt:** confirm Oikos Triple Zero Vanilla (US) no longer lists
   chicory root fiber, and that "milk solids" on Farmers Union High Protein
   Strawberry (AU) includes added milk protein, as the post suggests.
