@@ -13,7 +13,7 @@ the sitemap and inbound links — two older posts are extensionless.
 
 | Published | Post | File (`blog/`) | Canonical | Notes |
 |---|---|---|---|---|
-| 2026-10-11 | Are Protein Bars Ultra-Processed? Only 1 of 7 Isn't | `are-protein-bars-ultra-processed.html` | `.html` | 7 bars (UK/US/AU), labels verified on manufacturer pages Oct 11. Hero added Oct 11; Open Food Facts pack photos on the three US cards. Retitled the same day from "…? Quest, RXBAR & Grenade", which mirrored the Greek yogurt title. Measure in November. |
+| 2026-10-11 | Are Protein Bars Ultra-Processed? Only 1 of 7 Isn't | `are-protein-bars-ultra-processed.html` | `.html` | 7 bars (UK/US/AU), labels verified on manufacturer pages Oct 11. Hero added Oct 11; Open Food Facts pack photos on six of the seven cards (none for Musashi) and a gym-bag photo above the CTA. Retitled the same day from "…? Quest, RXBAR & Grenade", which mirrored the Greek yogurt title. Measure in November. |
 | 2026-09-22 | Is Greek Yogurt Ultra-Processed? FAGE, Oikos & Chobani | `is-greek-yogurt-ultra-processed.html` | `.html` | 6 products (UK/US/AU), checked Sept 22. Measure in October. |
 | 2026-09-10 | Is Peanut Butter Ultra-Processed? Read the Label | `is-peanut-butter-ultra-processed.html` | `.html` | 7 products (UK/US/AU), checked Sept 10. Measure in October. |
 | 2026-09-08 | Is Oat Milk Ultra-Processed? It Depends on 3 Ingredients | `is-oat-milk-ultra-processed.html` | `.html` | Measure in early October. |
@@ -65,8 +65,15 @@ All eleven are in `sitemap.xml` and `blog/index.html`.
   US product cards have pack photos from Open Food Facts contributors
   (CC BY-SA 3.0, credited and linked in each caption, metadata stripped):
   `protein-bar-quest-box.jpg`, `protein-bar-rxbar-wrapper.jpg` (shows the
-  front omitting natural flavors) and `protein-bar-larabar-box.jpg`. They may
-  show older packaging; the Sources note says so. Use Open Food Facts photos,
+  front omitting natural flavors) and `protein-bar-larabar-box.jpg`. The UK and
+  Australian cards followed: `protein-bar-grenade-wrapper.jpg` (UK 60g wrapper,
+  full-width strip because it is 3:1), `protein-bar-nakd-ingredients.jpg` (the
+  "That's it!" panel listing natural flavouring) and
+  `protein-bar-carmans-box.jpg`. Musashi has no photo: Open Food Facts had none
+  of the 90g High Protein Bar, and the packshot offered was the different
+  Protein+ Energy bar. They may show older packaging; the Sources note says so.
+  `protein-bars-gym-bag.jpg` (1456 × 816, Midjourney) sits above the
+  "Check the bar in your gym bag" CTA. Use Open Food Facts photos,
   not manufacturer packshots, for real products. Still planned: a paper-cut
   NOVA scale illustration and a whole-food protein flat lay.
 - Image-generation prompts are no longer kept in the repo: anything under the
