@@ -13,7 +13,7 @@ the sitemap and inbound links — two older posts are extensionless.
 
 | Published | Post | File (`blog/`) | Canonical | Notes |
 |---|---|---|---|---|
-| 2026-10-11 | Are Protein Bars Ultra-Processed? Quest, RXBAR & Grenade | `are-protein-bars-ultra-processed.html` | `.html` | 7 bars (UK/US/AU), cross-checked Oct 11 (see open fact-checks). **Needs a hero image.** Measure in November. |
+| 2026-10-11 | Are Protein Bars Ultra-Processed? Quest, RXBAR & Grenade | `are-protein-bars-ultra-processed.html` | `.html` | 7 bars (UK/US/AU), labels verified on manufacturer pages Oct 11. **Needs a hero image.** Measure in November. |
 | 2026-09-22 | Is Greek Yogurt Ultra-Processed? FAGE, Oikos & Chobani | `is-greek-yogurt-ultra-processed.html` | `.html` | 6 products (UK/US/AU), checked Sept 22. Measure in October. |
 | 2026-09-10 | Is Peanut Butter Ultra-Processed? Read the Label | `is-peanut-butter-ultra-processed.html` | `.html` | 7 products (UK/US/AU), checked Sept 10. Measure in October. |
 | 2026-09-08 | Is Oat Milk Ultra-Processed? It Depends on 3 Ingredients | `is-oat-milk-ultra-processed.html` | `.html` | Measure in early October. |
@@ -55,8 +55,8 @@ All eleven are in `sitemap.xml` and `blog/index.html`.
   `product_scan_succeeded` events over the 90 days to Oct 10, bars were the
   most-scanned category without its own post (43 users, second only to bread
   at 49). Seven bars: Quest Chocolate Chip Cookie Dough, RXBAR Chocolate Sea
-  Salt, Larabar Cashew Cookie (US); Grenade Carb Killa Cookies & Cream, Nakd
-  Peanut Delight (UK); Carman's Dark Choc & Cranberry, Musashi High Protein
+  Salt, Larabar Cashew Cookie (US); Grenade OREO Protein Bar, Nakd Peanut
+  Delight (UK); Carman's Dark Choc & Cranberry, Musashi High Protein
   Peanut Butter (AU). RXBAR and Nakd are flagged as borderline Group 4
   (natural flavouring is their only marker). Linked from the healthy-foods hub.
   No hero image yet: `og:image`/`twitter:image` temporarily reuse the hub's
@@ -67,18 +67,14 @@ All eleven are in `sitemap.xml` and `blog/index.html`.
 
 ### Open fact-checks
 
-- **Protein bars — cross-checked, not read off the manufacturer pages.**
-  The cloud environment's network policy blocked every product site, so each
-  label was confirmed through web search against the manufacturer page plus
-  at least one retailer listing (Oct 11). Points where sources disagree are
-  worded to cover both, but a direct look is still worthwhile:
-  Quest Chocolate Chip Cookie Dough lists either soluble corn fiber or
-  polydextrose depending on the listing; Grenade's collagen ingredient shows
-  as gelatine hydrolysate in most listings and bovine collagen hydrolysate in
-  one; Musashi's coating is sweetened with erythritol and steviol glycosides
-  in some listings and maltitol in others; Carman's 40g bar (linked) differs
-  from the older 200g-pack recipe, which used a "soy protein blend".
-  None of these changes a NOVA assessment.
+- **Protein bars — verified Oct 11 on the manufacturers' own pages**, except
+  RXBAR, whose site blocks automated access; its list matches the Lunds &
+  Byerlys retailer label. Grenade no longer lists the Carb Killa Cookies &
+  Cream bar on grenade.com, so the post uses the Grenade OREO Protein Bar.
+  Quest's page metadata still mentions soluble corn fiber, but its label
+  panel lists polydextrose; the post follows the label. Nakd's old
+  `eatnakd.com` product URL now redirects to the homepage, so the post links
+  `nakdbars.com`.
 - **Greek yogurt:** confirm Oikos Triple Zero Vanilla (US) no longer lists
   chicory root fiber, and that "milk solids" on Farmers Union High Protein
   Strawberry (AU) includes added milk protein, as the post suggests.
