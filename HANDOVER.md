@@ -1,4 +1,4 @@
-# Handover — SEO & Content (updated September 22, 2026)
+# Handover — SEO & Content (updated October 11, 2026)
 
 This file covers search, blog content, and the public website. `NEXT_STEPS.md`
 contains the separate analytics and iOS product backlog. Read `CLAUDE.md` for
@@ -6,13 +6,14 @@ site conventions before editing pages.
 
 ## Current state
 
-### All blog posts (10)
+### All blog posts (11)
 
 Newest first. "Canonical" is the exact form to use in `og:url`, JSON-LD `@id`,
 the sitemap and inbound links — two older posts are extensionless.
 
 | Published | Post | File (`blog/`) | Canonical | Notes |
 |---|---|---|---|---|
+| 2026-10-11 | Are Protein Bars Ultra-Processed? Quest, RXBAR & Grenade | `are-protein-bars-ultra-processed.html` | `.html` | 7 bars (UK/US/AU), labels verified on manufacturer pages Oct 11. **Needs a hero image.** Measure in November. |
 | 2026-09-22 | Is Greek Yogurt Ultra-Processed? FAGE, Oikos & Chobani | `is-greek-yogurt-ultra-processed.html` | `.html` | 6 products (UK/US/AU), checked Sept 22. Measure in October. |
 | 2026-09-10 | Is Peanut Butter Ultra-Processed? Read the Label | `is-peanut-butter-ultra-processed.html` | `.html` | 7 products (UK/US/AU), checked Sept 10. Measure in October. |
 | 2026-09-08 | Is Oat Milk Ultra-Processed? It Depends on 3 Ingredients | `is-oat-milk-ultra-processed.html` | `.html` | Measure in early October. |
@@ -24,7 +25,7 @@ the sitemap and inbound links — two older posts are extensionless.
 | 2025-04-09 | How to Identify Ultra-Processed Foods (NOVA Guide 2025) | `how-to-identify-ultra-processed-foods.html` | extensionless | Stale "2025" title; overlaps with the NOVA explainer (next step 1). |
 | 2025-03-11 | Why I Created an Ultra-Processed Food Scanner App for iOS | `why-ive-created-upf-detector.html` | extensionless | Founder story. Suffix dropped and grammar fixed Sept 22 (`og:title`/H1 still read “Why I've Created UPF Detector App”). |
 
-All ten are in `sitemap.xml` and `blog/index.html`.
+All eleven are in `sitemap.xml` and `blog/index.html`.
 
 ### What shipped recently
 
@@ -50,12 +51,30 @@ All ten are in `sitemap.xml` and `blog/index.html`.
   ([PR #4](https://github.com/pawt/upfdetector_www/pull/4)) so it doesn't
   echo the peanut-butter title and matches brand searches. Label-reading and
   straining images were planned but not supplied.
+- **October 11 — protein bars.** Picked from app scan data: in PostHog
+  `product_scan_succeeded` events over the 90 days to Oct 10, bars were the
+  most-scanned category without its own post (43 users, second only to bread
+  at 49). Seven bars: Quest Chocolate Chip Cookie Dough, RXBAR Chocolate Sea
+  Salt, Larabar Cashew Cookie (US); Grenade OREO Protein Bar, Nakd Peanut
+  Delight (UK); Carman's Dark Choc & Cranberry, Musashi High Protein
+  Peanut Butter (AU). RXBAR and Nakd are flagged as borderline Group 4
+  (natural flavouring is their only marker). Linked from the healthy-foods hub.
+  No hero image yet: `og:image`/`twitter:image` temporarily reuse the hub's
+  `healthy-foods-that-are-ultra-processed.webp`, and the body has no image.
 - Image-generation prompts are no longer kept in the repo: anything under the
   site root is published by GitHub Pages. The `docs/` prompt files were
   removed in PR #4.
 
 ### Open fact-checks
 
+- **Protein bars — verified Oct 11 on the manufacturers' own pages**, except
+  RXBAR, whose site blocks automated access; its list matches the Lunds &
+  Byerlys retailer label. Grenade no longer lists the Carb Killa Cookies &
+  Cream bar on grenade.com, so the post uses the Grenade OREO Protein Bar.
+  Quest's page metadata still mentions soluble corn fiber, but its label
+  panel lists polydextrose; the post follows the label. Nakd's old
+  `eatnakd.com` product URL now redirects to the homepage, so the post links
+  `nakdbars.com`.
 - **Greek yogurt:** confirm Oikos Triple Zero Vanilla (US) no longer lists
   chicory root fiber, and that "milk solids" on Farmers Union High Protein
   Strawberry (AU) includes added milk protein, as the post suggests.
@@ -100,8 +119,11 @@ Measure oat milk, peanut butter and Greek yogurt separately in October.
 
 ### 3. Choose the next single-food article
 
-Continue the winning “Is X ultra-processed?” format. Oat milk, peanut butter
-and Greek yogurt are now covered. Choose the next candidate from GSC query
+Continue the winning “Is X ultra-processed?” format. Oat milk, peanut butter,
+Greek yogurt and protein bars are now covered. In the Oct 10 app-scan count,
+the next uncovered categories were crisps/crackers (41 users), cereal and
+granola (38) and condiments such as mayo and ketchup (37). Sourdough (21)
+overlaps the bread post. Choose the next candidate from GSC query
 demand rather than drafting blind. Follow the Greek yogurt post's pattern:
 named products from the UK, US and Australia, a dated ingredient check, a
 summary table near the top, and a title that doesn't reuse an earlier post's
