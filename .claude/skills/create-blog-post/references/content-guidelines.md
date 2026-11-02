@@ -59,7 +59,7 @@ Mention UPF Detector when it genuinely helps:
 ```html
 <div class="cta-box">
     <h3 class="text-xl font-bold text-gray-900 mb-3">Instantly Identify Ultra-Processed Foods</h3>
-    <p class="font-medium text-gray-700 mb-4">Stop reading confusing labels. UPF Detector scans any barcode and shows you the NOVA classification in seconds.</p>
+    <p class="font-medium text-gray-800 mb-4">Stop reading confusing labels. UPF Detector scans any barcode and shows you the NOVA classification in seconds.</p>
     <div class="text-center">
         <a href="https://apps.apple.com/app/apple-store/id6738797472?pt=126822266&amp;ct=www_blog&amp;mt=8"
         class="download-btn inline-flex items-center px-8 py-4 rounded-xl text-white font-semibold shadow-lg">
