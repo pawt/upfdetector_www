@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(du:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(git -C /Users/pawt/dev/upfdetector_www diff --stat)"
     ]
   }
 }

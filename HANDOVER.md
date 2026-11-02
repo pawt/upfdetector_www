@@ -6,14 +6,15 @@ site conventions before editing pages.
 
 ## Current state
 
-### All blog posts (11)
+### All blog posts (12)
 
 Newest first. "Canonical" is the exact form to use in `og:url`, JSON-LD `@id`,
 the sitemap and inbound links — two older posts are extensionless.
 
 | Published | Post | File (`blog/`) | Canonical | Notes |
 |---|---|---|---|---|
-| 2026-10-11 | Are Protein Bars Ultra-Processed? Only 1 of 7 Isn't | `are-protein-bars-ultra-processed.html` | `.html` | 7 bars (UK/US/AU), labels verified on manufacturer pages Oct 11. Hero added Oct 11; Open Food Facts pack photos on six of the seven cards (none for Musashi) and a gym-bag photo above the CTA. Retitled the same day from "…? Quest, RXBAR & Grenade", which mirrored the Greek yogurt title. Measure in November. |
+| 2026-11-01 | Is Granola Ultra-Processed? Often, One Ingredient Decides | `is-granola-ultra-processed.html` | `.html` | 7 products (US/UK/AU), checked Nov 1. Picked from GSC: granola queries already ranked 1–6 with 0 clicks. **Hero image not supplied yet** — `og:image` points at `img/granola-ultra-processed.jpg`, which doesn't exist; don't publish without it. Measure in December. |
+| 2026-10-11 | Are Protein Bars Ultra-Processed? Only 1 of 7 Isn't | `are-protein-bars-ultra-processed.html` | `.html` | 7 bars (UK/US/AU), labels verified on manufacturer pages Oct 11. Hero added Oct 11; Open Food Facts pack photos on six of the seven cards, a Musashi pack image on the seventh and a gym-bag photo above the CTA. Retitled the same day from "…? Quest, RXBAR & Grenade", which mirrored the Greek yogurt title. Measure in November. |
 | 2026-09-22 | Is Greek Yogurt Ultra-Processed? FAGE, Oikos & Chobani | `is-greek-yogurt-ultra-processed.html` | `.html` | 6 products (UK/US/AU), checked Sept 22. Measure in October. |
 | 2026-09-10 | Is Peanut Butter Ultra-Processed? Read the Label | `is-peanut-butter-ultra-processed.html` | `.html` | 7 products (UK/US/AU), checked Sept 10. Measure in October. |
 | 2026-09-08 | Is Oat Milk Ultra-Processed? It Depends on 3 Ingredients | `is-oat-milk-ultra-processed.html` | `.html` | Measure in early October. |
@@ -25,7 +26,7 @@ the sitemap and inbound links — two older posts are extensionless.
 | 2025-04-09 | How to Identify Ultra-Processed Foods (NOVA Guide 2025) | `how-to-identify-ultra-processed-foods.html` | extensionless | Stale "2025" title; overlaps with the NOVA explainer (next step 1). |
 | 2025-03-11 | Why I Created an Ultra-Processed Food Scanner App for iOS | `why-ive-created-upf-detector.html` | extensionless | Founder story. Suffix dropped and grammar fixed Sept 22 (`og:title`/H1 still read “Why I've Created UPF Detector App”). |
 
-All eleven are in `sitemap.xml` and `blog/index.html`.
+All twelve are in `sitemap.xml` and `blog/index.html`.
 
 ### What shipped recently
 
@@ -69,13 +70,30 @@ All eleven are in `sitemap.xml` and `blog/index.html`.
   Australian cards followed: `protein-bar-grenade-wrapper.jpg` (UK 60g wrapper,
   full-width strip because it is 3:1), `protein-bar-nakd-ingredients.jpg` (the
   "That's it!" panel listing natural flavouring) and
-  `protein-bar-carmans-box.jpg`. Musashi has no photo: Open Food Facts had none
-  of the 90g High Protein Bar, and the packshot offered was the different
-  Protein+ Energy bar. They may show older packaging; the Sources note says so.
+  `protein-bar-carmans-box.jpg`. Open Food Facts had no photo of the Musashi 90g
+  High Protein Bar, so that card uses Musashi's own packshot of the White Choc
+  Caramel flavour from the same 90g range (`protein-bar-musashi-box.jpg`,
+  captioned as such; the user chose it over leaving the card bare). They may show older packaging; the Sources note says so.
   `protein-bars-gym-bag.jpg` (1456 × 816, Midjourney) sits above the
   "Check the bar in your gym bag" CTA. Use Open Food Facts photos,
   not manufacturer packshots, for real products. Still planned: a paper-cut
   NOVA scale illustration and a whole-food protein flat lay.
+- **November 1 — granola.** Chosen from the GSC export below rather than
+  app scans alone: "is granola ultra processed" and variants had ~57
+  impressions at positions 1–6 and 0 clicks, with no page answering it.
+  Seven products: Purely Elizabeth Original Ancient Grain Granola (Group 3),
+  KIND Oats & Honey Granola with Toasted Coconut (borderline 4: tapioca
+  syrup), Nature Valley Oats 'n Honey Crunchy bars (4) (US); Jordans Crunchy
+  Oat Raisin & Almond and Dorset Cereals Honey Granola (both borderline 4:
+  natural flavouring only) (UK); Carman's Original Fruit Free Muesli (Group 3)
+  and Uncle Tobys Chewy Choc Chip bar (4) (AU). Golden syrup is treated as a
+  culinary sweetener and tapioca syrup as a marker; the post explains that
+  line. Title avoids the brand-list pattern (Greek yogurt) and the "N of 7"
+  pattern (protein bars). Linked from the healthy-foods hub, whose cereal
+  entry wrongly said most granolas are extruded (fixed), and from the
+  Nutella/breakfast granola-bar card and the protein bars checklist. No
+  images yet: needs a hero (1456 × 816) and optionally Open Food
+  Facts pack photos for the cards.
 - Image-generation prompts are no longer kept in the repo: anything under the
   site root is published by GitHub Pages. The `docs/` prompt files were
   removed in PR #4.
@@ -135,11 +153,14 @@ Measure oat milk, peanut butter and Greek yogurt separately in October.
 ### 3. Choose the next single-food article
 
 Continue the winning “Is X ultra-processed?” format. Oat milk, peanut butter,
-Greek yogurt and protein bars are now covered. In the Oct 10 app-scan count,
-the next uncovered categories were crisps/crackers (41 users), cereal and
-granola (38) and condiments such as mayo and ketchup (37). Sourdough (21)
-overlaps the bread post. Choose the next candidate from GSC query
-demand rather than drafting blind. Follow the Greek yogurt post's pattern:
+Greek yogurt, protein bars and granola are now covered. In the Oct 10
+app-scan count, the other uncovered categories were crisps/crackers (41
+users) and condiments such as mayo and ketchup (37), but the Nov 1 GSC export
+shows almost no search demand for either (~4 impressions for crackers, none
+for condiments). Better-evidenced next candidates from that export: Yakult
+(33 impressions, position 4.7, no post) and corn flakes / breakfast cereal
+(~25 impressions). Sourdough (21) overlaps the bread post. Choose from GSC
+query demand rather than drafting blind. Follow the Greek yogurt post's pattern:
 named products from the UK, US and Australia, a dated ingredient check, a
 summary table near the top, and a title that doesn't reuse an earlier post's
 second half ("Read the Label", "Check the Label"). Link the new post from the
@@ -235,6 +256,33 @@ position 1.4: the AI Overview answers the question on the results page.
 `upf checker` 3 (64, 7.2); `free processed food scanner` 3 (17, 3.2);
 `free processed food scanner app` 2 (30, 1.2); `upf apps` 2 (25, 7.4);
 `upf app` 1 (257, 8.4); `upf app free` 1 (62, 6.8).
+
+## GSC snapshot — November 1 (last 3 months, web search)
+
+Exported from GSC (Polish UI) to `~/Downloads/upfdetector/`. Pages:
+
+| Page | Position | Impressions | Clicks | CTR |
+|---|---:|---:|---:|---:|
+| Homepage | 7.2 | 4,507 | 133 | 2.95% |
+| Nutella post | 4.6 | 3,636 | 45 | 1.24% |
+| Bread post | 7.6 | 4,769 | 12 | 0.25% |
+| NOVA explainer | 16.1 | 1,725 | 7 | 0.41% |
+| Oat milk | 7.1 | 998 | 4 | 0.40% |
+| How-to-identify | 38.1 | 1,004 | 3 | 0.30% |
+| Protein bars (Oct 11) | 6.0 | 468 | 2 | 0.43% |
+| Greek yogurt | 8.1 | 377 | 0 | 0% |
+| Healthy foods | 24.9 | 194 | 2 | 1.03% |
+| Peanut butter | 6.7 | 171 | 1 | 0.58% |
+| Weight gain | 12.8 | 44 | 0 | 0% |
+
+Nutella's CTR rose from 0.8% (Sept 22) to 1.24%. Bread now has the most
+impressions of any page but a 0.25% CTR, which makes it the best title-test
+candidate once the September comparison is recorded. Countries: US 6,317
+impressions, UK 3,618, Australia 1,311, Canada 975. Mobile CTR 1.54% vs
+desktop 0.66%. Top queries by clicks: `upf detector` 15, `nova food
+classification app` 14 (430 impressions, position 5.4), `is nutella ultra
+processed` 9. List-intent queries ("ultra processed foods list" and
+variants, ~70 impressions) are a possible angle for the healthy-foods hub.
 
 ## Site conventions
 
