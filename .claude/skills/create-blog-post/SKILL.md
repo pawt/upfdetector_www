@@ -14,7 +14,7 @@ When creating a blog post:
 
 1. **Confirm topic details** with the user (target keywords, search intent, angle)
 2. **Create the HTML file** using the template at `templates/blog-post-template.html`
-3. **Update blog index** - add entry to top of `blog/index.html`
+3. **Update blog index** - add entry to top of `blog/index.html`, copying an existing entry's markup including its thumbnail. Make the thumbnail from the post's hero image: `sips -s format jpeg -s formatOptions 78 --resampleWidth 640 img/[hero] --out img/thumbs/[hero-name].jpg`, and set the `<img>` `height` to the thumbnail's real height
 4. **Update sitemap** - add URL to `sitemap.xml` and update blog index lastmod
 
 ## Good Blog Topics
@@ -71,7 +71,7 @@ After creating a post, verify:
 - [ ] Academic citations with numbered references (if applicable)
 
 ### Site Updates
-- [ ] Blog index (`blog/index.html`) updated with new entry at top
+- [ ] Blog index (`blog/index.html`) updated with new entry at top, with a 640px thumbnail in `img/thumbs/`
 - [ ] Sitemap (`sitemap.xml`) updated with new URL
 - [ ] Blog index lastmod updated in sitemap
 - [ ] Content reads naturally (not keyword-stuffed)
